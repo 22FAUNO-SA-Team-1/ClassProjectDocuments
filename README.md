@@ -1,6 +1,6 @@
 # ClassProjectDocuments
 
-##Team 1
+## Team 1
 
 ### Members
 
@@ -10,6 +10,6 @@
 4) Trenton Chramosta
 5) Zach Lange
 
-###Table of Contents
+### Table of Contents
 
 Part 1 - [Project Proposal](./ProjectProposal.md)
