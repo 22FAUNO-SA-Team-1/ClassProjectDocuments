@@ -1,4 +1,5 @@
 # ClassProjectDocuments
+
 ##Team 1
 
 ### Members
@@ -10,4 +11,5 @@
 5) Zach Lange
 
 ###Table of Contents
+
 Part 1 - [Project Proposal](./ProjectProposal.md)
