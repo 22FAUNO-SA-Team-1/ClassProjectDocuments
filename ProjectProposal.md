@@ -1,4 +1,6 @@
-{::comment} This shouldn't be displayed {:/comment}
+{::comment}
+This shouldn't be displayed 
+{:/comment}
 # CYBR 8420 Project Proposal
 ## Team 1
 
