@@ -2,7 +2,7 @@
 # CYBR 8420 Project Proposal
 ## Team 1
 
-# Open-Source Project:
+# Open-Source Project: Keycloak
 
 ## Perceived Operation Environment
 
@@ -24,6 +24,8 @@
 ## Security Related History
 
 ## Repo Links
+Official Keycloak repo - https://github.com/keycloak/keycloak
+ClassDocs- https://github.com/22FAUNO-SA-Team-1/ClassProjectDocuments
 
 ## Team Reflection
 
