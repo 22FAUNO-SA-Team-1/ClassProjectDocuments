@@ -25,11 +25,11 @@ After our initial shortlisted project ideas were set aside due to only impacting
 
 Keycloak is licensed under the Apache License, Version 2. https://www.apache.org/licenses/LICENSE-2.0
 
-# Summary of License
+### Summary of License
 
 This license gives You (entity using the code that is not a contributor) the right to make utilize the code base, and make changes to the code base. The You can utilize the code base in production products and sell products with the code base installed in them; however, the licensor of the code holds no responsibility in any warranty or actions that your changes cause. All of the original code base falls under the Apache License and by no means can that be taken away. You may apply your own licenses to your own work, or expansion of the code, but the Apache License trumps all other licenses in regards to the licensor's code.
 
-# Summary of Sections
+### Summary of Sections
 
 1) Definitions - Provided legal definitions for "You", "Source", "Work", "Contributor", "Contribution", "Object", "Source", "Derivative Works", "Legal Entity", "Licensor", and "License". The important definitions include "you", which is the entitiy that is using the permissions that the license gives, "Lisensor", the copyright owner, and "Work", the work made available by the license. 
 
