@@ -6,18 +6,57 @@
 
 ## Perceived Operation Environment
 
+The primary users of Keycloak will likely be profit generating organizations of any size. Larger organizations will appreciate the security tools that allow the control of access to varying degrees for its employees. Medium sized organizations may been drawn to the ability to add single-sign on. Smaller organizations will likely appreciate the capability to add identity brokering and social login so that they can manage some degree of security without needing a high level of expertise to manage it. The truth is that any sized organization who does not specialize in security, or even technology, could appreciate the tools Keycloak can provide them, especially if that organization has any kind of web presence.
+
 ### System Engineering Diagram
 
+![Keycloak System Engineering Diagram]( /system_diagram.png "Keycloak System Diagram")
 
 ### Potential Threats
 
+As with any software which exists solely for the purpose of security, threats perceived by end users will be exactly the types of threats Keycloak is attempting to solve. These threats include:
+
+* Internal users gaining access to restricted data within the organization.
+* External users gaining access to restricted data within the organization.
+* Maintaining / ensuring that usernames and passwords are securely stored.
+* Liability and financial impact in the event of a security breach.
+
+
 ### Current Security Features
+
+Keycloak is in the business of providing its users with security features via web APIs to an external server. As such, the primary security features will come from the specific protocols used. These protocols include:
+
+* OpenID
+* OAuth 2.0
+* SAML 
+
+Aside from the protocols above, Keycloak also takes the communication of external vulnerability reporting very seriously. Below is an excerpt of their GitHub security policy. 
+
+> Security Policy
+
+>The Keycloak team takes security very seriously, and aim to resolve issues as quickly as possible. Building secure software is a continuous process, and can always be improved. As such we welcome reports on potential security vulnerabilities, as well as suggestions around hardening the software and our process.
+>
+>Reporting a suspected vulnerability
+>
+>It is important that suspected vulnerabilities are disclosed in a responsible way, and are not publicly disclosed until after they have been analysed and a fix is available.
+>
+>To report a security vulnerability, send an email to keycloak-security@googlegroups.com.
+>
+>If you would like to work with us on a fix for the security vulnerability, please include your GitHub username in the above email, and we will provide you access to a temporary private fork where we can collaborate on a fix without it being disclosed publicly.
+>
+>Do not open a public issue, send a pull request, or disclose any information about the suspected vulnerability publicly. If you discover any publicly disclosed security vulnerabilities, please notify us immediately through keycloak-security@googlegroups.com.
+>
+>Supported Versions
+>
+>Depending on the severity of a vulnerability the issue may be fixed in the current major.minor release of Keycloak, or for lower severity vulnerabilities or hardening in the following major.minor release. Refer to https://www.keycloak.org/downloads to find the latest release.
+>
+>If you are unable to regularly upgrade Keycloak we encourage you to consider Red Hat Single Sign-On, which offers long term support of specific versions of Keycloak. 
 
 ## Team Motivation
 
 While I wouldn't go as far as to say we found it difficult to select a project, it did take us a few iterations and discussion sessions to narrow down a subject that checked all the required boxes.  We wanted a project that would be interesting enough to keep everyone thoroughly engaged.  We wanted it to be in languages that were relatively well known and in wide use.  We also wanted to be sure the project would have an active community with a variety of contributors as a healthier project would lend itself well to our needs.  
 
-After our initial shortlisted project ideas were set aside due to only impacting individuals, we went in search of another idea.  An admittedly shallow search into trending topics in languages we were familiar with led to Keycloak.  After some more group discussion as well as approval from Dr. Gandhi, we found Keycloak to be a perfect fit.  It serves as software that can affect small webapps scaling up to massive applications looking for authentication.
+After our initial shortlisted project ideas were set aside due to only impacting individuals, we went in search of another idea.  An admittedly shallow search into trending topics in languages we were familiar with led to Keycloak.  After some more group discussion as well as approval from Dr. Gandhi, we found Keycloak to be a perfect fit.  It serves as software that can affect small web apps scaling up to massive applications looking for authentication.
 
 ## Open-Source Project Description
 
