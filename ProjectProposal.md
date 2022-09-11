@@ -120,9 +120,22 @@ This license gives You (entity using the code that is not a contributor) the rig
 
 9) Accepting Warranty or Additional Liability - you may offer warranty of the licensor's work; however, you are solely responsible for said warranty.
 
-## Contributions
+## Contributing
 
-## Security Related History
+Under the Apache License, Keycloak welcomes outside contributons. However there are some ground rules that they lay out [here](https://github.com/keycloak/keycloak/blob/main/CONTRIBUTING.md). Their primary checklist is as follows
+> 1. A discussion around the change (https://github.com/keycloak/keycloak/discussions/categories/ideas)
+> 2. A GitHub Issue with a good description associated with the PR
+> 3. One feature/change per PR
+> 4. One commit per PR
+> 5. PR rebased on main (`git rebase`, not `git pull`) 
+> 6. [Good descriptive commit message, with link to issue](#commit-messages-and-issue-linking)
+> 7. No changes to code not directly related to your PR
+> 8. Includes functional/integration test
+> 9. Includes documentation
+
+
+## Security Incident History
+Like their security policy, Keycloak is also open about potential vulnerabilities as noted [here](https://github.com/cpitman/keycloak-documentation/blob/master/topics/security-vulnerabilities.adoc). Additionally,there are [68 CVE's](https://www.cvedetails.com/product/46161/Redhat-Keycloak.html?vendor_id=25) for Keycloak spanning all versions.
 
 ## Repo Links
 
