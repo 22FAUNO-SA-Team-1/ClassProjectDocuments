@@ -145,5 +145,9 @@ ClassDocs- https://github.com/22FAUNO-SA-Team-1/ClassProjectDocuments
 
 ## Team Reflection
 
+Our group, (which I imagine is quite similar to most other groups) has a variety of skills and interests.  As Chris had a fair amount of experience leading academic project groups, he offered to fill the Team lead position and received group approval.  His goals as team lead is to keep open and constant communication channels open between all group members, and to delegate a smooth and manageable workload for all members while reflecting on any imput from the group.  Along with team lead, the other role we wanted to fill right away was a combined role of writing, administration, and reviewing, as when combined with the team lead, would facilitate the smoothest workload for the entire group.  Chris has worked with Trenton in the past few years through undergrad at UNK so having administrative help from him fits nicely with the group and Chris and Trenton together will also serve as a small review team for major deliverables.
 
+Everyone in the group has some form of technical expertise as would be common for a Cyber based course at the graduate level.  With that in mind, we've decided to have all group memebers contribute in part to the technical role.  While we'll likely assign tasks that fit each individuals skillsets, the thought process behind inflating the technical role beyond a single member is to receive the widest viewpoint possible on all given subjects as we tackle them.
+
+Thus far, everyone in the group has contributed quite well.  Discussion is constant on the communication channels we setup for our group, and meetings so far have been relatively brief, to the point, and productive.  We believe we have taken great steps in the early weeks of team formation, organization, and preparation in order to set ourselves up with the best chance for success.
 
