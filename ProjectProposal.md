@@ -54,9 +54,7 @@ Aside from the protocols above, Keycloak also takes the communication of externa
 
 ## Team Motivation
 
-While I wouldn't go as far as to say we found it difficult to select a project, it did take us a few iterations and discussion sessions to narrow down a subject that checked all the required boxes.  We wanted a project that would be interesting enough to keep everyone thoroughly engaged.  We wanted it to be in languages that were relatively well known and in wide use.  We also wanted to be sure the project would have an active community with a variety of contributors as a healthier project would lend itself well to our needs.  
-
-After our initial shortlisted project ideas were set aside due to only impacting individuals, we went in search of another idea.  An admittedly shallow search into trending topics in languages we were familiar with led to Keycloak.  After some more group discussion as well as approval from Dr. Gandhi, we found Keycloak to be a perfect fit.  It serves as software that can affect small web apps scaling up to massive applications looking for authentication.
+Our team was motivated to find a project with an achievable goal of fully analyzing a project within the semester timeframe.  When our primary list of projects fell short, a cursory search into trending topics in familiar languages led to Keycloak.  After some group discussion as well as approval from Dr. Gandhi, we found Keycloak to be a perfect fit for several reasons.  First, we wanted a project that would be interesting enough to keep everyone thoroughly engaged. Second, Keycloak was primarily written in a language familiar to us: Java.  Finally, we also wanted to be sure the project would have an active community with a variety of contributors as a healthier project would lend itself well to our needs.  It serves as software that can affect small web apps scaling up to massive applications looking for authentication.
 
 ## Open-Source Project Description
 
@@ -65,7 +63,7 @@ Keycloak is an open source identity and access management tool used for authenti
 
 ### Contributors & Activity
 
-As of this writing, Keycloak has 631 individual contributors and 14,800 lifetime commits. The GitHub repository has been stared 13,500 times and it has been forked 4,700 times indicating the the repository itself is quite popular. Keycloak is also very active. New newest commit is only 20 hours old and there have been 23 commits over the past week alone. 
+As of this writing, Keycloak has 631 individual contributors and 14,800 lifetime commits. The GitHub repository has been starred 13,500 times and it has been forked 4,700 times indicating the the repository itself is quite popular. Keycloak is also very active. New newest commit is only 20 hours old and there have been 23 commits over the past week alone. 
 
 ### Languages & Platform
 
