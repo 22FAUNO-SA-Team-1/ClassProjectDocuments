@@ -38,7 +38,7 @@ Aside from the protocols above, Keycloak also takes the communication of externa
 >
 >Reporting a suspected vulnerability
 >
->It is important that suspected vulnerabilities are disclosed in a responsible way, and are not publicly disclosed until after they have been analysed and a fix is available.
+>It is important that suspected vulnerabilities are disclosed in a responsible way, and are not publicly disclosed until after they have been analyzed and a fix is available.
 >
 >To report a security vulnerability, send an email to keycloak-security@googlegroups.com.
 >
@@ -54,7 +54,7 @@ Aside from the protocols above, Keycloak also takes the communication of externa
 
 ## Team Motivation
 
-Our team was motivated to find a project with an achievable goal of fully analyzing a project within the semester timeframe.  When our primary list of projects fell short, a cursory search into trending topics in familiar languages led to Keycloak.  After some group discussion as well as approval from Dr. Gandhi, we found Keycloak to be a perfect fit for several reasons.  First, we wanted a project that would be interesting enough to keep everyone thoroughly engaged. Second, Keycloak was primarily written in a language familiar to us: Java.  Finally, we also wanted to be sure the project would have an active community with a variety of contributors as a healthier project would lend itself well to our needs.  It serves as software that can affect small web apps scaling up to massive applications looking for authentication.
+Our team was motivated to find a project with an achievable goal of fully analyzing a project within the semester time frame.  When our primary list of projects fell short, a cursory search into trending topics in familiar languages led to Keycloak.  After some group discussion as well as approval from Dr. Gandhi, we found Keycloak to be a perfect fit for several reasons.  First, we wanted a project that would be interesting enough to keep everyone thoroughly engaged. Second, Keycloak was primarily written in a language familiar to us: Java.  Finally, we also wanted to be sure the project would have an active community with a variety of contributors as a healthier project would lend itself well to our needs.  It serves as software that can affect small web apps scaling up to massive applications looking for authentication.
 
 ## Open-Source Project Description
 
@@ -63,7 +63,7 @@ Keycloak is an open source identity and access management tool used for authenti
 
 ### Contributors & Activity
 
-As of this writing, Keycloak has 631 individual contributors and 14,800 lifetime commits. The GitHub repository has been starred 13,500 times and it has been forked 4,700 times indicating the the repository itself is quite popular. Keycloak is also very active. New newest commit is only 20 hours old and there have been 23 commits over the past week alone. 
+As of this writing, Keycloak has 631 individual contributors and 14,800 lifetime commits. The GitHub repository has been starred 13,500 times and it has been forked 4,700 times indicating the the repository itself is quite popular. Keycloak is also very active. The newest commit is only 20 hours old and there have been 23 commits over the past week alone. 
 
 ### Languages & Platform
 
@@ -120,7 +120,7 @@ This license gives You (entity using the code that is not a contributor) the rig
 
 ## Contributing
 
-Under the Apache License, Keycloak welcomes outside contributons. However there are some ground rules that they lay out [here](https://github.com/keycloak/keycloak/blob/main/CONTRIBUTING.md). Their primary checklist is as follows
+Under the Apache License, Keycloak welcomes outside contributions. However there are some ground rules that they lay out [here](https://github.com/keycloak/keycloak/blob/main/CONTRIBUTING.md). Their primary checklist is as follows
 > 1. A discussion around the change (https://github.com/keycloak/keycloak/discussions/categories/ideas)
 > 2. A GitHub Issue with a good description associated with the PR
 > 3. One feature/change per PR
@@ -143,9 +143,9 @@ ClassDocs- https://github.com/22FAUNO-SA-Team-1/ClassProjectDocuments
 
 ## Team Reflection
 
-Our group, (which I imagine is quite similar to most other groups) has a variety of skills and interests.  As Chris had a fair amount of experience leading academic project groups, he offered to fill the Team lead position and received group approval.  His goals as team lead is to keep open and constant communication channels open between all group members, and to delegate a smooth and manageable workload for all members while reflecting on any imput from the group.  Along with team lead, the other role we wanted to fill right away was a combined role of writing, administration, and reviewing, as when combined with the team lead, would facilitate the smoothest workload for the entire group.  Chris has worked with Trenton in the past few years through undergrad at UNK so having administrative help from him fits nicely with the group and Chris and Trenton together will also serve as a small review team for major deliverables.
+Our group, (which I imagine is quite similar to most other groups) has a variety of skills and interests.  As Chris had a fair amount of experience leading academic project groups, he offered to fill the Team lead position and received group approval.  His goals as team lead is to keep open and constant communication channels open between all group members, and to delegate a smooth and manageable workload for all members while reflecting on any input from the group.  Along with team lead, the other role we wanted to fill right away was a combined role of writing, administration, and reviewing, as when combined with the team lead, would facilitate the smoothest workload for the entire group.  Chris has worked with Trenton in the past few years through undergrad at UNK so having administrative help from him fits nicely with the group and Chris and Trenton together will also serve as a small review team for major deliverables.
 
-Everyone in the group has some form of technical expertise as would be common for a Cyber based course at the graduate level.  With that in mind, we've decided to have all group memebers contribute in part to the technical role.  While we'll likely assign tasks that fit each individuals skillsets, the thought process behind inflating the technical role beyond a single member is to receive the widest viewpoint possible on all given subjects as we tackle them.
+Everyone in the group has some form of technical expertise as would be common for a Cyber based course at the graduate level.  With that in mind, we've decided to have all group members contribute in part to the technical role.  While we'll likely assign tasks that fit each individuals skill sets, the thought process behind inflating the technical role beyond a single member is to receive the widest viewpoint possible on all given subjects as we tackle them.
 
 Thus far, everyone in the group has contributed quite well.  Discussion is constant on the communication channels we setup for our group, and meetings so far have been relatively brief, to the point, and productive.  We believe we have taken great steps in the early weeks of team formation, organization, and preparation in order to set ourselves up with the best chance for success.
 
