@@ -1,6 +1,6 @@
 # ClassProjectDocuments
 
-## Team 1
+## Team OneWon
 
 ### Members
 
@@ -13,3 +13,4 @@
 ### Table of Contents
 
 Part 1 - [Project Proposal](./ProjectProposal.md)
+Part 2 - [Security Requirements](./SecurityRequirements.md)
