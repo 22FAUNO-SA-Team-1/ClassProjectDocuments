@@ -10,7 +10,7 @@ The primary users of Keycloak will likely be profit generating organizations of 
 
 ### System Engineering Diagram
 
-![Keycloak System Engineering Diagram]( /system_diagram.png "Keycloak System Diagram")
+![Keycloak System Engineering Diagram]( ./Diagrams/system_diagram.png "Keycloak System Diagram")
 
 ### Potential Threats
 
