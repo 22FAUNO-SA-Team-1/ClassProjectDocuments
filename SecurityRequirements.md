@@ -13,14 +13,13 @@ The truststore is a foundational part of the Keycloak mechanism for remote conne
 
 #### Use Case
 
-In this case, a user will connect to an external server using Keykloak.  Since credentials will be passed over the network or internet, packet interception is a risk to the user's credentials.  The user expects to connect to the external server without issue and without risk of credential theft.  The user believes proper care has been taken to configure the system and underlying security in order to connect to the expected endpoint.
+In this case, a user will connect to an external server using Keycloak.  The user expects to connect to the external server without issue and without risk of credential theft.  The user believes proper care has been taken to configure the system and underlying security in order to connect to the expected endpoint.  Server configuration should be for maximum security to prevent any security breach from external entities.
 
 
 
-##### Misuse Case
+#### Misuse Case
 
-In reality, a hacker may attempt to monitor network traffic in order to capture credentials in transit.  A properly configured truststore will establish an encrypted SSL tunnel between endpoints which mitigates any potential network inspection by bad actors.  Keycloak will only connect to endpoints which match private keys stored locally in the trust store which mitigates the theat of a man-in-the-middle attack.
-Alternatively, a hacker may gain access to the truststore if the Keycloak server is breached.  Using a strong truststore password will eliminate the possibly of the bad actor altering the truststore file.  Similarly, a security certificate must be swiftly revoked from the truststore should a remote server's certificate become compromised.  Regular logging and auditing will elimiate these potential security risks.
+In reality, a hacker may attempt to infiltrate the Keycloak server.  The hacker's goals may not be immediately apparent.  For example, curiousity may be a motivating factor which leads to an opportunitstic security breach.  Should the Keycloak server be attacked, care must be taken to maintain the integrity of the truststore.  Using a strong truststore password will eliminate the possibly of the bad actor altering the truststore file.  Similarly, a security certificate must be swiftly revoked from the truststore should a remote server's certificate become compromised.  Regular logging and auditing will elimiate these potential security risks.
 
 
 
