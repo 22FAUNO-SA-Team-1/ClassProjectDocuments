@@ -1,0 +1,55 @@
+Security Requirements Meeting 1
+
+Wednesday, September 14, 2022
+8:06 AM
+
+Meeting Date:  9/14/22
+Meeting Start Time:  4:15 PM
+Meeting End Time:  4:45
+
+Next meeting time:  Next Wednesday 4:15 PM
+Professor Checkin Meeting: Wednesday 5:30 PM
+
+Attendance:
+    Chris Schaaf	X
+    Trenton Chramosta	X
+    Zach Lange	X
+    John Kieran	X
+    Ethen Kuether	X
+
+Pre-meeting agenda: Security Requirements discuss how it applies to our project
+
+Discord vs. Zoom?  Discord
+
+
+
+Deliverable Requirements:
+
+	• Part 1:  Misuse case notion and quality (50)
+	Use of proper misuse case notation (as discussed in class).
+	Reasoning Quality: Misuse cases reflect reasoning that help derive security requirements
+	
+		○ Identify 5 essential interactions of the software
+			§ can be enabling systems, or other systems
+			§ Use cases - simple diagrams showing how the interactions are designed to be used
+				□ For each use case:  develop security requirements using misuse case analysis
+				□ name each misuser and list motives, resources, attack of choice, etc.
+				□ use misuse case notation
+	
+		
+	
+	
+	• Part 1: Reflection (10) - Ethen
+	Assess alignment of security requirements with advertised features. Review OSS project documentation and codebase to support your observations.
+	
+	• Part 2: OSS project documentation review (20) - Zach, John
+	Review OSS project documentation for security-related configuration and installation issues. Summarize your observations.
+	
+	• Planning and Reflection (20) - Chris, Trenton
+	Overall team planning and Individual Contribution
+	
+		○ Link github issues/individual assignments
+		○ Discuss any catch points or difficulties, and how we overcame them
+	
+	
+Assignments for next week:
