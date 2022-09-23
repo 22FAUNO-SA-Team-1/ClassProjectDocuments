@@ -1,0 +1,49 @@
+Security Requirements Meeting 2
+
+Wednesday, September 21, 2022
+12:22 PM
+
+Meeting Date:  9/21/22
+Meeting Start Time:  4:15 PM
+Meeting End Time:  4:45 PM
+
+Next meeting time:  Next Wednesday 4:15 PM
+  Potential Review Meeting:  Sunday 7:30 PM
+Professor Checkin Meeting: Today 5:30 PM
+
+Attendance:
+    Chris Schaaf	X
+    Trenton Chramosta	 Work Conflict
+    Zach Lange	X
+    John Kieran	X
+    Ethen Kuether	X
+
+Pre-meeting agenda: Review current work on security requirements
+   
+	• Checkout and review diagram work
+		○ Ask Dr. Gandhi about using HTTPS/SSL rather than bubbles for encryption and strong encryption
+	
+	• Discuss adding review comments to github issues before they are closed out
+	
+	• Discuss (if needed) security requirements discovered from diagram work thus far
+
+	• Discuss Secondary Assignments
+		○ Part 1 Reflection
+			§ Ethen - 
+
+		○ Documentation Review
+			§ John / Zach - 
+		
+		○ Planning / Reflection
+			§ Add more about group strategy
+				□ We assigned 1 use/misuse case per member and had each person find their own idea but we offered commentary and communication on what ideas may or may not work for the critical interactions
+			§ What we struggled with
+				□ Finding valid interactions that aren't overly simple and not convoluted
+				
+			§ how we overcame it
+				□ Time spent researching and offering ideas to everone in group
+			§ Group assignment reasoning
+	• ensure we link our project/issue board along with the repo when we submit
+
+Chris - Focus on input validation and buffer overflow
+
