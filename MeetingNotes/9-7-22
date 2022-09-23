@@ -1,0 +1,90 @@
+First Attendance Meeting - Project Ideas
+
+Wednesday, September 7, 2022
+1:13 PM
+
+Meeting Date:  9/7/22
+Meeting Start Time:  4:15 PM
+Meeting End Time:  5:00 PM
+
+Next meeting time:  Sunday 7:30 PM
+
+Attendance:
+    Chris Schaaf	X
+    Trenton Chramosta	X
+    Zach Lange	X
+    John Kieran	X
+    Ethen Kuether	X
+
+Pre-meeting agenda: Discuss semester project ideas
+
+
+	• Kodi
+		○ https://github.com/xbmc/xbmc
+		
+		○ security needs, threats:  addon store allowing 3rd party users to create addons and connect to youtube/vudu
+			§ in-app privacy from user-to-user (video history accessible to other users on same physical hardware)
+			§ possible peer-to-peer media sharing scurity issues (potential piracy)
+			§ no security features from a 30,000 ft. brief look
+		○ entertainment industry could be interesting
+
+		○ OSS project description - C++ (overview of the project as it already exists)
+			§ xml
+			§ add github stats
+				□ how often it gets pushes
+				□ how many issues
+		○ License summary
+	
+	
+		○ Security history
+			§ covered above abit
+				
+			
+		
+	• zoho crm
+
+
+	• Pi-hole
+		○ https://github.com/pi-hole/pi-hole
+
+		○ Security Needs:
+			§ Install script is piped into bash console
+			§ might allow unattended upgrades/udates
+			§ potential privilege escelation vulnerability
+		
+		○ Motivation:  Some group members personally use this software, personal interest in the product
+	
+		○ Project description:  Bash/shell scripting
+	
+		○ License History
+	
+		○ Security History
+			§ privilege escelation vulnerability
+	
+	
+	
+
+
+Discuss assigning parts of the project proposal assignment
+
+	• Systems Engineering View -  John / Zack
+
+	• Security Needs, Threats, Features
+	• Motivation                            - John / Zack
+	• OSS project description
+
+	• License Summary and Contributor Agreement  -  Ethen
+
+	• Security History  -  Security History  -  Trenton
+
+	• Project Planning and Reflection  -  Chris
+	• Overall team planning and Individual Contribution
+
+
+Group Roles
+
+  Team Lead - Chris
+  Administration, Writing, Reviewing - Chris, Trenton
+
+ Tech - Zach, John, Ethen, Trenton
+
