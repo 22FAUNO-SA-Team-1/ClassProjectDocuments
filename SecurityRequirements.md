@@ -53,6 +53,8 @@ TODO
 
 ### Use Case 3
 
+![UserMisuse](./Diagrams/User Management Misuse Case v1.png "UserMisuse")
+
 ### Use Case 4
 
 ### Use Case 5
