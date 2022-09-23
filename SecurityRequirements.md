@@ -51,10 +51,27 @@ Finally, a user could choose to write a script to brute force the administratorâ
 TODO
 
 
-### Use Case 3
+### Use Case 3:  User Management
 
-![]( ./Diagrams/User Management Misuse Case v1.png)
+![]( ./Diagrams/UsersMUCv2.png)
 
+#### Description
+Proper user and admin account management is critical for any application and Keycloak offers a variety of ways to add, secure, and maintain a collection of authorized users.  Users can be added directly through the web interface dashboard by an admin, as well as via via shell commands or even queried via LDAP or another user database service.  Users can also be assigned a Realm at creation, or Realm affiliation can be changed later at the admin's discretion.  This scenario will explore ensuring your user accounts are created securely and not maliciously manipulated.
+
+#### Use Case
+The user in question for this scenario is a a system administrator in charge of adding and maintaining the user accounts for a system that has employed Keycloak for authorization.  The administrator will have the ability to add a user manually via the browser dashboard, and will have a variety of actions available in order to ensure that only authorized users are added and accounts aren't modified unless intended by the company.  Along with the ability to add a user directly, the administrator will have the option of using an LDAP service to retrieve users from an existing user database.  Finally, the administrator will maintain the integrity of the existing userbase and ensure that accounts aren't gaining escalated privileges without authorization.
+
+#### Misuse Case
+On the Misuse side of this scenario, the attacker will be a rogue inside employee with user privileges.  The first line of attack will be to create a fake malicious account with access to internal assets.  This attack will be mitigated by maintaining logs showing when a user account is added or modified, when it is added or modified, and any particulars changed througy the modification.  In response to logs, an attack may attempt to modify the logs in order to cover their tracks.  This in turn, can be prevented by ensuring that your logs allow appending data only so that log entries can be added but no entry can be modified.
+
+Another route of attack may be to either elevate the privileges of the attackers account, or an accomplice's account.  This can be mitigated by ensuring that every user has the aboslute minimum privilege status required to function in their company role.  In response an attacker may instead seek to escalate horizontally by attempting to gain control of a newly added user account that either has a very easy to crack password or worse yet still has a default issued password where a user hasn't logged in and changed the password to an individualized one yet.  The attack can be rebuffed here by ensuring that the default password is changed semi-regularly or rotated from an internal list of default passwords.  Administrators can also keep an eye on user behavior to catch any suspicious behavior.
+
+Finally, in the case where user accounts are queried from an LDAP server, an attacker may wish to attempt a malicious LDAP injection attack in order to gain unauthorized access or other valuable information from the database.  This attack can be mitigated be including input validation in the user database software which may still have some vulnerabilities to exploit.  In order to ensure the LDAP server can't be attacked and a malicious user can't retrieve account information from the server, any and all user input must be both validated and sanitized.
+
+#### Security Requirements
+* Utilize logging to monitor the addition, deletion, and modification of user accounts and ensure the log files can only be appended to in order to disallow malicious modifications.
+* Minimize privileges for all users with regard to ensureing they can complete their role in the company and ensure that default passwords aren't the same and left in place for long periods of time.
+* Ensure that user input in regards to user database queries is always BOTH validated and sanitized.
 
 
 ### Use Case 4
