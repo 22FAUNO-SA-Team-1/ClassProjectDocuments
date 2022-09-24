@@ -38,7 +38,7 @@ Realms are the base level structure inside of Keycloak. Realms manage users in a
 
 #### Use Case
 
-In this use case, the master administrator has created a sub-realm. While doing so, the master admin will manage the sub-realm admin account (assigning the role to a separate user if applicable). The master admin will also go on to add standard users (handled in a separate case) and assign them applications and permissions. Optionally, the new realm can be configured according to specific security requirements. Creating cryptographic realm keys is a base level security measure required by all realms. Optionally, the admin can choose to require SSL/HHTPS connections and establish a brute force detection policy that defines what a brute force attack looks like, and how they should be handled. 
+In this use case, the master administrator has created a sub-realm. While doing so, the master admin will manage the sub-realm admin account (assigning the role to a separate user if applicable). The master admin will also go on to add standard users (handled in a separate case) and assign them applications and permissions. Optionally, the new realm can be configured according to specific security requirements. Creating cryptographic realm keys is a base level security measure required by all realms. Optionally, the admin can choose to require SSL/HTTPS connections and establish a brute force detection policy that defines what a brute force attack looks like, and how they should be handled. 
 
 #### Misuse Case
 
@@ -47,7 +47,7 @@ The next logical step for the attacker will be to obtain administrator privilege
 Finally, a user could choose to write a script to brute force the administrator’s password. If the administrator established a brute force detection policy, this risk will be mitigated. However, because brute force detection is optional, not establishing a brute force detection policy would offer the attacker their highest probability of success. 
 
 #### Security Requirement
-It is absolutely essential that Keycloak administrators take security precautions that are not enabled by default. First and foremost, brute force detection should be activated and the maximum number of unsuccessful login attempts should be set a reasonable number, three to five should be sufficient (Max is thirty). Keycloak also offers a feature to notify administrators when the maximum number of login attempts has been reached and the account is locked, this too should be enabled. Additionally, Multi-factor authentication should be turned on to ensure that even if a rouge user is able to capture the administrator's login credentials, they would not be able to access the account successfully. Finally, requiring SSL/HTTPS will compliment the default security provided by cryptographic realm keys with is one of the only security measures Keycloak makes mandatory.
+It is absolutely essential that Keycloak administrators take security precautions that are not enabled by default. First and foremost, brute force detection should be activated and the maximum number of unsuccessful login attempts should be set a reasonable number, three to five should be sufficient (Max is thirty). Keycloak also offers a feature to notify administrators when the maximum number of login attempts has been reached and the account is locked, this too should be enabled. Additionally, Multi-factor authentication should be turned on to ensure that even if a rouge user is able to capture the administrator's login credentials, they would not be able to access the account successfully. Finally, requiring SSL/HTTPS will compliment the default security provided by cryptographic realm keys which is one of the only security measures Keycloak makes mandatory.
 
 
 ### Use Case 3:  User Management
@@ -77,27 +77,17 @@ Finally, in the case where user accounts are queried from an LDAP server, an att
 
 ![Keycloak Authorization Diagram]( ./Diagrams/Ethen_Kuether_Authorization_UseCase.jpg "Keycloak Authroization Diagram")
 
-### Use Case 5: Hosting a Keycloak server
-
-![](./Diagrams/TCusecase.png)
 #### Description
-
-Keeping High Uptime on a SSO service like Keycloak is important since if it lags the entire user base will lag thus decreasing organizational efficiency.
+User authentication is important for any application, especially keycloak. Keycloak is a tool to help manage user authorizations and helps implement features such as single sign on (SSO), Dual Factor Authentication, and the use of Active Directory, plus many more tools. With an application that holds up the front line of many other applications, it is important that the user authentication is secure. Malicious actors should not be able to sign on as other employees as that would compromise not just one application, but many.
 
 #### Use Case
-In this scenario, you are a Systems Engineer on a tight timetable who needs to create many servers today. Luckily hosting a (barebones) Keycloak Server seems relatively simple, you creates a cluster with multiple server nodes, configure logs (because everyone loves logs), then start the service in each node and pass off to security.
+The user in this use case is not necessarily a person, but the system requesting authorized access. This could mean whenever a user signs in, or goes to a page. If the user has already signed in, the SSO feature of keycloak should be able to authorize the user without the user having to re-enter their credentials. The authorization use case may also include dual factor authentication if the user is signing on for the first time. Finally, the use case involves making sure the necessary information such as passwords are hashed to provide the best security.
 
+#### Misuse Case
 
-##### Misuse Case
-On the opposite side, lies a Turncoat (TC) whose goal is to lower uptime. TC first tries to Denial of Service (DoS) a node. Unfourtunately, it looks like the Service is still operational Oh wow, there are multiple nodes Looks like TC will have to Distrubute a DoS per node. This will multiply overhead and increase suspicion on TC.
+#### Security Requirements
 
-
-#### Security Requirement
-* Utilize logging to detect attempted DoS and DDoS attemps
-* Node fall over if DoS is successful
-* Increase nodes to increase threshold for a successful DDoS attempt
-* Utilize external resorces (e.g. Firewall, disabling accounts) to stop the Turncoat's goal of Hindering SSO
-
+### Use Case 5
 
 ### Reflection on Security Requirements
 
@@ -111,7 +101,7 @@ Being that Keycloak is in the business of security, their security related docum
 
 [Section 15](https://www.keycloak.org/docs/latest/server_admin/index.html#mitigating-security-threats) is dedicated entirely to mitigating security threats. There are a wide variety of security options available to users of Keycloak many of which are not turned on by default. Some of these features include: Brute force detection, Clickjack prevention, SSL/HTTPS requirements, and default PBKDF2 password hashing.
 
-Keycloak also has documentation specifically focusing on securing the clients and service being integrated with Keycloak.
+Keycloak also has documentation specifically focusing on securing the clients and services being integrated with Keycloak.
 
 [Securing Applications and Services Guide](https://www.keycloak.org/docs/latest/securing_apps/index.html)
 
