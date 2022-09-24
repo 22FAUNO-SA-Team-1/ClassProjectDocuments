@@ -97,8 +97,8 @@ Keycloak also has documentation specifically focusing on securing the clients an
 
 Security Related Issues and Security Advisories
 
-There are currently open security related issues on Keycloak's Github. This is likely due Keycloak's [security policy](https://github.com/keycloak/keycloak/security/policy) which expressly prohibits opening issues for security related concerns. Instead, Keycloak prefers private email communications and no public announcement about the vulnerability until it can be patched. 
+There are currently no open security related issues on Keycloak's Github. This is likely due Keycloak's [security policy](https://github.com/keycloak/keycloak/security/policy) which expressly prohibits opening issues for security related concerns. Instead, Keycloak prefers private email communications and no public announcement about the vulnerability until it can be patched. 
 
-Keycloak also maintains a [security advisory](https://github.com/keycloak/keycloak/security/advisories) board on their Github page, which describe (patched) notable security vulnerabilities, along with their severity level. 
+Keycloak also maintains a [security advisory](https://github.com/keycloak/keycloak/security/advisories) board on their Github page, which describe notable (patched) security vulnerabilities, along with their severity level. 
 
 ## Overall Planning and Reflection
