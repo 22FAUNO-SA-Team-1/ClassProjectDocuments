@@ -81,6 +81,8 @@ Finally, in the case where user accounts are queried from an LDAP server, an att
 
 ## OSS Project Documentation Review
 
+Security Documentation
+
 Being that Keycloak is in the business of security, their security related documentation was fairly extensive. Keycloak has included many guides on their website describing various methods for setting the appropriate security measures based on the users need. 
 
 [Server Administration Guide](https://www.keycloak.org/docs/latest/server_admin/index.html)
@@ -91,5 +93,12 @@ Keycloak also has documentation specifically focusing on securing the clients an
 
 [Securing Applications and Services Guide](https://www.keycloak.org/docs/latest/securing_apps/index.html)
 
+//TODO
+
+Security Related Issues and Security Advisories
+
+There are currently open security related issues on Keycloak's Github. This is likely due Keycloak's [security policy](https://github.com/keycloak/keycloak/security/policy) which expressly prohibits opening issues for security related concerns. Instead, Keycloak prefers private email communications and no public announcement about the vulnerability until it can be patched. 
+
+Keycloak also maintains a [security advisory](https://github.com/keycloak/keycloak/security/advisories) board on their Github page, which describe (patched) notable security vulnerabilities, along with their severity level. 
 
 ## Overall Planning and Reflection
