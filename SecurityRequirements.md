@@ -73,7 +73,19 @@ Finally, in the case where user accounts are queried from an LDAP server, an att
 * Ensure that user input in regards to user database queries is always BOTH validated and sanitized.
 
 
-### Use Case 4
+### Use Case 4: Authorizing a User
+
+![Keycloak Authorization Diagram]( ./Diagrams/Ethen_Kuether_Authorization_UseCase.jpg "Keycloak Authroization Diagram")
+
+#### Description
+User authentication is important for any application, especially keycloak. Keycloak is a tool to help manage user authorizations and helps implement features such as single sign on (SSO), Dual Factor Authentication, and the use of Active Directory, plus many more tools. With an application that holds up the front line of many other applications, it is important that the user authentication is secure. Malicious actors should not be able to sign on as other employees as that would compromise not just one application, but many.
+
+#### Use Case
+The user in this use case is not necessarily a person, but the system requesting authorized access. This could mean whenever a user signs in, or goes to a page. If the user has already signed in, the SSO feature of keycloak should be able to authorize the user without the user having to re-enter their credentials. The authorization use case may also include dual factor authentication if the user is signing on for the first time. Finally, the use case involves making sure the necessary information such as passwords are hashed to provide the best security.
+
+#### Misuse Case
+
+#### Security Requirements
 
 ### Use Case 5
 
