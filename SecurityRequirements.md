@@ -73,7 +73,9 @@ Finally, in the case where user accounts are queried from an LDAP server, an att
 * Ensure that user input in regards to user database queries is always BOTH validated and sanitized.
 
 
-### Use Case 4
+### Use Case 4: Authorizing a User
+
+![Keycloak Authorization Diagram]( ./Diagrams/Ethen_Kuether_Authorization_UseCase.jpg "Keycloak Authroization Diagram")
 
 ### Use Case 5
 
