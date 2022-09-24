@@ -87,10 +87,10 @@ The user in this use case is not necessarily a person, but the system requesting
 The main misuse case involves an entity trying to steal accounts. The first misuse case involves a man in the middle attack where the thief is trying to get information about the account from the network. Security items such as cookies may be snatched, and then used to trick the single sign on mechanism into thinking that the thief has already signed onto the stolen account. Or if a thief has already stolen one employee's account, they can attempt to use that account to gain other account information depending on what permissions that employee has. With the authorizing a user case, a common misuse case is a database attack. By attempting different escape characters, an attacker may be able to access the database that holds all of the passwords. Even if password hashing is in place, brute force techniques can be applied to try and crack the hashing code. 
 
 #### Security Requirements
-- Using cookie expiration to limit the amount of time a user can be logged in
-- Using device identification to make sure that a cookie can only be used on one device
-- Dual Authentication to protect against login attempts
-- Password Hashing with a complex hashing algorithm
+* Using cookie expiration to limit the amount of time a user can be logged in
+* Using device identification to make sure that a cookie can only be used on one device
+* Dual Authentication to protect against login attempts
+* Password Hashing with a complex hashing algorithm
 
 ### Use Case 5: Hosting a Keycloak server
 
