@@ -38,7 +38,7 @@ Realms are the base level structure inside of Keycloak. Realms manage users in a
 
 #### Use Case
 
-In this use case, the master administrator has created a sub-realm. While doing so, the master admin will manage the sub-realm admin account (assigning the role to a separate user if applicable). The master admin will also go on to add standard users (handled in a separate case) and assign them applications and permissions. Optionally, the new realm can be configured according to specific security requirements. Creating cryptographic realm keys is a base level security measure required by all realms. Optionally, the admin can choose to require SSL/HHTPS connections and establish a brute force detection policy that defines what a brute force attack looks like, and how they should be handled. 
+In this use case, the master administrator has created a sub-realm. While doing so, the master admin will manage the sub-realm admin account (assigning the role to a separate user if applicable). The master admin will also go on to add standard users (handled in a separate case) and assign them applications and permissions. Optionally, the new realm can be configured according to specific security requirements. Creating cryptographic realm keys is a base level security measure required by all realms. Optionally, the admin can choose to require SSL/HTTPS connections and establish a brute force detection policy that defines what a brute force attack looks like, and how they should be handled. 
 
 #### Misuse Case
 
@@ -47,7 +47,7 @@ The next logical step for the attacker will be to obtain administrator privilege
 Finally, a user could choose to write a script to brute force the administrator’s password. If the administrator established a brute force detection policy, this risk will be mitigated. However, because brute force detection is optional, not establishing a brute force detection policy would offer the attacker their highest probability of success. 
 
 #### Security Requirement
-It is absolutely essential that Keycloak administrators take security precautions that are not enabled by default. First and foremost, brute force detection should be activated and the maximum number of unsuccessful login attempts should be set a reasonable number, three to five should be sufficient (Max is thirty). Keycloak also offers a feature to notify administrators when the maximum number of login attempts has been reached and the account is locked, this too should be enabled. Additionally, Multi-factor authentication should be turned on to ensure that even if a rouge user is able to capture the administrator's login credentials, they would not be able to access the account successfully. Finally, requiring SSL/HTTPS will compliment the default security provided by cryptographic realm keys with is one of the only security measures Keycloak makes mandatory.
+It is absolutely essential that Keycloak administrators take security precautions that are not enabled by default. First and foremost, brute force detection should be activated and the maximum number of unsuccessful login attempts should be set a reasonable number, three to five should be sufficient (Max is thirty). Keycloak also offers a feature to notify administrators when the maximum number of login attempts has been reached and the account is locked, this too should be enabled. Additionally, Multi-factor authentication should be turned on to ensure that even if a rouge user is able to capture the administrator's login credentials, they would not be able to access the account successfully. Finally, requiring SSL/HTTPS will compliment the default security provided by cryptographic realm keys which is one of the only security measures Keycloak makes mandatory.
 
 
 ### Use Case 3:  User Management
@@ -89,7 +89,7 @@ Being that Keycloak is in the business of security, their security related docum
 
 [Section 15](https://www.keycloak.org/docs/latest/server_admin/index.html#mitigating-security-threats) is dedicated entirely to mitigating security threats. There are a wide variety of security options available to users of Keycloak many of which are not turned on by default. Some of these features include: Brute force detection, Clickjack prevention, SSL/HTTPS requirements, and default PBKDF2 password hashing.
 
-Keycloak also has documentation specifically focusing on securing the clients and service being integrated with Keycloak.
+Keycloak also has documentation specifically focusing on securing the clients and services being integrated with Keycloak.
 
 [Securing Applications and Services Guide](https://www.keycloak.org/docs/latest/securing_apps/index.html)
 
