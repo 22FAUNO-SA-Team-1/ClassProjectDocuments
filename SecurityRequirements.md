@@ -89,7 +89,7 @@ The user in this use case is not necessarily a person, but the system requesting
 
 ### Use Case 5: Hosting a Keycloak server
 
-![Hosting a Keycloak server Diagram](./Diagrams/TCusecase.png "Hosting a Keycloak server Diagram")
+![Hosting a Keycloak server Diagram](./Diagrams/TCusecasev2.png "Hosting a Keycloak server Diagram")
 #### Description
 
 Keeping High Uptime on a SSO service like Keycloak is important since if it lags the entire user base will lag thus decreasing organizational efficiency.
