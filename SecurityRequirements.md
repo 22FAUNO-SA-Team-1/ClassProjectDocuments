@@ -87,7 +87,27 @@ The user in this use case is not necessarily a person, but the system requesting
 
 #### Security Requirements
 
-### Use Case 5
+### Use Case 5: Hosting a Keycloak server
+
+![](./Diagrams/TCusecase.png)
+#### Description
+
+Keeping High Uptime on a SSO service like Keycloak is important since if it lags the entire user base will lag thus decreasing organizational efficiency.
+
+#### Use Case
+In this scenario, you are a Systems Engineer on a tight timetable who needs to create many servers today. Luckily hosting a (barebones) Keycloak Server seems relatively simple, you creates a cluster with multiple server nodes, configure logs (because everyone loves logs), then start the service in each node and pass off to security.
+
+
+##### Misuse Case
+On the opposite side, lies a Turncoat (TC) whose goal is to lower uptime. TC first tries to Denial of Service (DoS) a node. Unfourtunately, it looks like the Service is still operational Oh wow, there are multiple nodes Looks like TC will have to Distrubute a DoS per node. This will multiply overhead and increase suspicion on TC.
+
+
+#### Security Requirement
+* Utilize logging to detect attempted DoS and DDoS attemps
+* Node fall over if DoS is successful
+* Increase nodes to increase threshold for a successful DDoS attempt
+* Utilize external resorces (e.g. Firewall, disabling accounts) to stop the Turncoat's goal of Hindering SSO
+
 
 ### Reflection on Security Requirements
 
