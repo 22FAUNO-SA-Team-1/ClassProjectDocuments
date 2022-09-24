@@ -89,7 +89,7 @@ The user in this use case is not necessarily a person, but the system requesting
 
 ### Use Case 5: Hosting a Keycloak server
 
-![Hosting a Keycloak server Diagram](./Diagrams/TCusecasev2.png "Hosting a Keycloak server Diagram")
+![Hosting Keycloak Diagram](./Diagrams/TCusecasev2.png "Hosting Keycloak Diagram")
 #### Description
 
 Keeping High Uptime on a SSO service like Keycloak is important since if it lags the entire user base will lag thus decreasing organizational efficiency.
@@ -106,7 +106,7 @@ On the opposite side, lies a Turncoat (TC) whose goal is to lower uptime. TC fir
 * Utilize logging to detect attempted DoS and DDoS attempts
 * Node fall over if DoS is successful
 * Increase nodes to increase threshold for a successful DDoS attempt
-* Utilize external resorces (e.g. Firewall, disabling accounts) to stop the Turncoat's goal of Hindering SSO
+* Utilize external resorces (e.g. Firewall rules, disabling accounts) to stop the Turncoat's goal of Hindering SSO
 
 
 ### Reflection on Security Requirements
@@ -136,6 +136,6 @@ Keycloak also maintains a [security advisory](https://github.com/keycloak/keyclo
 ## Overall Planning and Reflection
 Link to Github Issues:  https://github.com/22FAUNO-SA-Team-1/ClassProjectDocuments/issues
 
-We chose, like I imagine many have done and will continue, to have each group memeber tackle one of the 5 use / misuse cases and then divide the rest of the writeup as evenly possible among group members.  Ethen took on the use and misuse case reflection while John and Zach dove into the Keycloak documentation review.  Chris covered the project planning and reflection for this stage while adjusting based on group feedback and Trenton managed administrative duties, managing github and signing off on final reviews before submission.
+We chose to have each group member tackle one of the 5 use / misuse cases and then divide the rest of the writeup as evenly possible among group members.  Ethen took on the use and misuse case reflection while John and Zach dove into the Keycloak documentation review.  Chris covered the project planning and reflection for this stage while adjusting based on group feedback and Trenton managed administrative duties, such as github management and signing off on final reviews before submission.
 
 The first roadblack our group encountered was the 5 key interactions.  The initial plan was to have each member find an interaction themselves and report back to the group on a "first come first served" basis to prevent any overlap.  We all had touble initially finding interactions that would fit the requirements of the assignment.  The consensus was that it was difficult to find 5 distinct cases with an OSSP that served one main purpose of serving as an authentication tool for applications.  Time, research, and plenty of group discussion, led to a few initial cases that allowed the rest of the group to determine use cases to really dig into the diagram work and develop the "cat and mouse" style of attack and defend planning.  The rest of the security requirements phase went quite smoothly.
