@@ -114,7 +114,13 @@ On the opposite side, lies a Turncoat (TC) whose goal is to lower uptime. TC fir
 * Utilize external resorces (e.g. Firewall rules, disabling accounts) to stop the Turncoat's goal of Hindering SSO
 
 
-### Reflection on Security Requirements
+## Reflection on Security Requirements
+
+The security requirements of the above use cases comes in different forms in Keycloak. As mentioned in "Implementing a Truststore", Keycloak utilizes a pre-built java keystore to help mitigate any errors that would arrise from creating a keystore from scratch. Keycloak also mitigates and man in the middle attacks that involve cookies by having cookies pas checks with its UserSessionModel and AuthenticationSessionModel before it can return a success message. Keycloak also has the ability to instantiate two-factor authentication via Google Authenticator, OAuth 2.0 support, and user federation to log in based on Active Directory. 
+
+Keycloak can manage user permission based on a variety of access control features such as time-based, user-based, role-based, etc. Keycloak has a built in brute force prevention setting built in to prevent against any brute force attacks as well. Another security requirement that keycloak has built in is clickjacking prevention. This help preven man in the middle attacks in any of the keycloak's realms. Keycloaks passwords are hashed using the PBKDF2 hashing algorithm. Keycloak has a well-built authorization architecture with auditing being an essential part of the process. This way all events are logged as a safety measure.
+
+Finally, Keycloak provides a well-built guide for any entity using their product. This guide will help administrators lock down their realms to an acceptable level. Keycloak is FAPI complient, and can even help administrators be FAPI complient with their applications with a support tab for that. This guide also includes different security threats and how to avoid them, what settings to apply, and information on how that attack takes place. This document is the best way to secure any application one uses keycloak for as it provides the knowledge to properly handle all permissions, attacks, and configurations.
 
 ## OSS Project Documentation Review
 
