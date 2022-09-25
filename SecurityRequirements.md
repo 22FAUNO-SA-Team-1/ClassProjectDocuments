@@ -138,7 +138,7 @@ The [Security Applications and Services Guide](https://www.keycloak.org/docs/lat
 
 Security Related Issues and Security Advisories
 
-There are currently no open security related issues on Keycloak's Github. This is likely due Keycloak's [security policy](https://github.com/keycloak/keycloak/security/policy) which expressly prohibits opening issues for security related concerns. Instead, Keycloak prefers private email communications and no public announcement about the vulnerability until it can be patched. 
+There are currently no open security related issues on Keycloak's Github. This is likely due to Keycloak's [security policy](https://github.com/keycloak/keycloak/security/policy) which expressly prohibits opening issues for security related concerns. Instead, Keycloak prefers private email communications and no public announcement about the vulnerability until it can be patched. 
 
 Keycloak also maintains a [security advisory](https://github.com/keycloak/keycloak/security/advisories) board on their Github page, which describe notable (patched) security vulnerabilities, along with their severity level.  As of this writing, eight security advisories are listed with various degrees of severity.  Two entries were published within days of this writing: a [low-severity](https://github.com/keycloak/keycloak/security/advisories/GHSA-wf7g-7h6h-678v) regarding Javascript upload through the admin console, and a [moderate-severity](https://github.com/keycloak/keycloak/security/advisories/GHSA-w9mf-83w3-fv49) regarding the execution of malicious scripts in the admin console.  
 
