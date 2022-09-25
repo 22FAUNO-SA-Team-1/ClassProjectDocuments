@@ -134,15 +134,13 @@ Being that Keycloak is in the business of security, their security related docum
 
 Keycloak also has documentation specifically focusing on securing the clients and services being integrated with Keycloak.
 
-[Securing Applications and Services Guide](https://www.keycloak.org/docs/latest/securing_apps/index.html)
-
-//TODO
+The [Security Applications and Services Guide](https://www.keycloak.org/docs/latest/securing_apps/index.html) details security settings for configuring Keycloak to act as an identity broker with OpenID Connect (an extension to OAuth 2.0) and SAML 2.0.  This guide offers assistance installing, configuring, and securing OpenID instances which run on top of platforms such as WildFly, Tomcat, Spring Boot, Node.js, Apache HTTP Server, and others.  Keycloak refers to these as modular adapters which interface with these platforms and offers product-specific syntax to configure and verify connectivity.
 
 Security Related Issues and Security Advisories
 
 There are currently no open security related issues on Keycloak's Github. This is likely due Keycloak's [security policy](https://github.com/keycloak/keycloak/security/policy) which expressly prohibits opening issues for security related concerns. Instead, Keycloak prefers private email communications and no public announcement about the vulnerability until it can be patched. 
 
-Keycloak also maintains a [security advisory](https://github.com/keycloak/keycloak/security/advisories) board on their Github page, which describe notable (patched) security vulnerabilities, along with their severity level. 
+Keycloak also maintains a [security advisory](https://github.com/keycloak/keycloak/security/advisories) board on their Github page, which describe notable (patched) security vulnerabilities, along with their severity level.  As of this writing, eight security advisories are listed with various degrees of severity.  Two entries were published within days of this writing: a low-severity regarding(https://github.com/keycloak/keycloak/security/advisories/GHSA-wf7g-7h6h-678v) Javascript upload through the admin console, and a moderate-severity(https://github.com/keycloak/keycloak/security/advisories/GHSA-w9mf-83w3-fv49) regarding the execution of malicious scripts in the admin console.  
 
 ## Overall Planning and Reflection
 Link to Github Issues:  https://github.com/22FAUNO-SA-Team-1/ClassProjectDocuments/issues
