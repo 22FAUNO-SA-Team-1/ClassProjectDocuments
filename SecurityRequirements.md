@@ -75,7 +75,7 @@ Finally, in the case where user accounts are queried from an LDAP server, an att
 
 ### Use Case 4: Authorizing a User
 
-![Keycloak Authorization Diagram]( ./Diagrams/Ethen_Kuether_Authorization_UseCase.jpg "Keycloak Authroization Diagram")
+![Keycloak Authorization Diagram]( ./Diagrams/Ethen_Kuether_Authorization_UseCase.jpg "Keycloak Authorization Diagram")
 
 #### Description
 User authentication is important for any application, especially Keycloak. Keycloak is a tool to help manage user authorizations and helps implement features such as single sign on (SSO), Dual Factor Authentication, and the use of Active Directory, plus many more tools. With an application that holds up the front line of many other applications, it is important that the user authentication is secure. Malicious actors should not be able to sign on as other employees as that would compromise not just one application, but many.
@@ -100,27 +100,27 @@ The main misuse case involves an entity trying to steal accounts. The first misu
 Keeping High Uptime on a SSO service like Keycloak is important since if it lags the entire user base will lag thus decreasing organizational efficiency.
 
 #### Use Case
-In this scenario, a Systems Engineer on a tight timetable needs to create many servers today. Luckily hosting a (barebones) Keycloak Server seems relatively simple, they create a cluster with multiple server nodes, configure logs (because everyone loves logs), then start the service in each node and pass off to the Security Team.
+In this scenario, a Systems Engineer on a tight timetable needs to create many servers today. Luckily hosting a (bare bones) Keycloak Server seems relatively simple, they create a cluster with multiple server nodes, configure logs (because everyone loves logs), then start the service in each node and pass off to the Security Team.
 
 
 ##### Misuse Case
-On the opposite side, lies a Turncoat (TC) whose goal is to lower uptime. TC first tries to Denial of Service (DoS) a node. Unfourtunately, it looks like the Service is still operational due to node redundancy. Looks like TC will have to Distrubute a DoS per node. This will multiply overhead and increase suspicion on TC.
+On the opposite side, lies a Turncoat (TC) whose goal is to lower uptime. TC first tries to Denial of Service (DoS) a node. Unfortunately, it looks like the Service is still operational due to node redundancy. Looks like TC will have to distribute a DoS per node. This will multiply overhead and increase suspicion on TC.
 
 
 #### Security Requirement
 * Utilize logging to detect attempted DoS and DDoS attempts
 * Node fall over if DoS is successful
 * Increase nodes to increase threshold for a successful DDoS attempt
-* Utilize external resorces (e.g. Firewall rules, disabling accounts) to stop the Turncoat's goal of Hindering SSO
+* Utilize external resources (e.g. Firewall rules, disabling accounts) to stop the Turncoat's goal of Hindering SSO
 
 
 ## Reflection on Security Requirements
 
-The security requirements of the above use cases comes in different forms in Keycloak. As mentioned in "Implementing a Truststore", Keycloak utilizes a pre-built java keystore to help mitigate any errors that would arrise from creating a keystore from scratch. Keycloak also mitigates any man in the middle attacks that involve cookies by having cookies pass checks with its UserSessionModel and AuthenticationSessionModel before it can return a success message. Keycloak also has the ability to instantiate two-factor authentication via Google Authenticator, OAuth 2.0 support, and user federation login based on Active Directory. 
+The security requirements of the above use cases comes in different forms in Keycloak. As mentioned in "Implementing a Truststore", Keycloak utilizes a pre-built java keystore to help mitigate any errors that would arise from creating a keystore from scratch. Keycloak also mitigates any man in the middle attacks that involve cookies by having cookies pass checks with its UserSessionModel and AuthenticationSessionModel before it can return a success message. Keycloak also has the ability to instantiate two-factor authentication via Google Authenticator, OAuth 2.0 support, and user federation login based on Active Directory. 
 
 Keycloak can manage user permission based on a variety of access control features such as time-based, user-based, role-based, etc. Keycloak passwords are hashed using the PBKDF2 hashing algorithm. Additionally, there is a built-in brute force prevention setting. Another security requirement that Keycloak has built-in is clickjacking prevention. This helps prevent man in the middle attacks in any Keycloak realm. The authorization architecture under Keycloak is well-built with auditing being an essential part of the process. This way all events are logged as a safety measure.
 
-Finally, Keycloak provides a well-built guide for any entity using their product. This guide will help administrators lock down their realms to an acceptable level. Keycloak is FAPI complient, and can help administrators be FAPI complient with their applications via a support tab. This guide also includes different security threats and how to avoid them, what settings to apply, and information on how that attack takes place. This document is the best way to secure any application one uses Keycloak for as it provides the knowledge to properly handle all permissions, attacks, and configurations.
+Finally, Keycloak provides a well-built guide for any entity using their product. This guide will help administrators lock down their realms to an acceptable level. Keycloak is FAPI compliant, and can help administrators be FAPI compliant with their applications via a support tab. This guide also includes different security threats and how to avoid them, what settings to apply, and information on how that attack takes place. This document is the best way to secure any application one uses Keycloak for as it provides the knowledge to properly handle all permissions, attacks, and configurations.
 
 ## OSS Project Documentation Review
 
@@ -147,4 +147,4 @@ Link to Github Issues:  https://github.com/22FAUNO-SA-Team-1/ClassProjectDocumen
 
 We chose to have each group member tackle one of the 5 use / misuse cases and then divide the rest of the writeup as evenly possible among group members.  Ethen took on the use and misuse case reflection while John and Zach dove into the Keycloak documentation review.  Chris covered the project planning and reflection for this stage while adjusting based on group feedback and Trenton managed administrative duties, such as github management and signing off on final reviews before submission.
 
-The first roadblack our group encountered was the 5 key interactions.  The initial plan was to have each member find an interaction themselves and report back to the group on a "first come first served" basis to prevent any overlap.  We all had touble initially finding interactions that would fit the requirements of the assignment.  The consensus was that it was difficult to find 5 distinct cases with an OSSP that served one main purpose of serving as an authentication tool for applications.  Time, research, and plenty of group discussion, led to a few initial cases that allowed the rest of the group to determine use cases to really dig into the diagram work and develop the "cat and mouse" style of attack and defend planning.  The rest of the security requirements phase went quite smoothly.
+The first road block our group encountered was the 5 key interactions.  The initial plan was to have each member find an interaction themselves and report back to the group on a "first come first served" basis to prevent any overlap.  We all had trouble initially finding interactions that would fit the requirements of the assignment.  The consensus was that it was difficult to find 5 distinct cases with an OSSP that served one main purpose of serving as an authentication tool for applications.  Time, research, and plenty of group discussion, led to a few initial cases that allowed the rest of the group to determine use cases to really dig into the diagram work and develop the "cat and mouse" style of attack and defend planning.  The rest of the security requirements phase went quite smoothly.
