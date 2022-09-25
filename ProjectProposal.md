@@ -1,6 +1,6 @@
-<!-- This shouldn't be displayed -->
+<!-- This shouldn't be displayed it's a comment-->
 # CYBR 8420 Project Proposal
-## Team 1
+## Team OneWon
 
 # Open-Source Project: Keycloak
 
