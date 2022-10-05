@@ -16,6 +16,8 @@ Part 1 - [Project Proposal](./ProjectProposal.md)
 
 Part 2 - [Security Requirements](./SecurityRequirements.md)
 
+Part 3 - [Assurance Cases](./AssuranceCases.md)
+
 ### Misc
 
 [Meeting Notes](./MeetingNotes)
