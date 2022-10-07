@@ -12,7 +12,9 @@ E1:  Regular auditing of system logs are needed to protect the integrity of the 
 
 E2:  A poor certificate using weak encryption can allow for easier credential interception.  SSL certicates should never be self-signed and always acquired from a trusted Certificate Authority using industry-standard RSA 2048-bit or higher key length.
 
-### Assurance Case 2:
+### Assurance Case 2:  Keycloak ensures all users are authenticated before being allowed access to applications or other resources
+
+![Keycloak Assurance Diagram]( ./Diagrams/cs_assurance_claim.png "Keycloak Assurance Diagram")
 
 ### Assurance Case 3:
 
