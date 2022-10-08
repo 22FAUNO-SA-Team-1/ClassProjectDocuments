@@ -16,7 +16,9 @@ E2:  A poor certificate using weak encryption can allow for easier credential in
 
 ![Keycloak Assurance Diagram]( ./Diagrams/cs_assurance_claim.png "Keycloak Assurance Diagram")
 
-### Assurance Case 3:
+### Assurance Case 3: Keycloak Prevents Unauthorized Access to Clients
+
+![Keycloak Assurance Diagram]( ./Diagrams/AssuranceCase3.png "Keycloak Assurance Diagram")
 
 ### Assurance Case 4:
 
