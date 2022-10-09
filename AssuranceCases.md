@@ -49,7 +49,7 @@ Conclusion and Gaps: Since Keycloak's primary function is authentication and aut
 
 ### Assurance Case 4:
 
-![Keycloak Assurance Case 4 Diagram]( ./Diagrams/Kuether_Assurance_Diagram.png "Keycloak Assurance Case 4 Diagram")
+![Keycloak Assurance Case 4 Diagram]( ./Diagrams/Revised Assurance Cases/AssuranceCase4.png "Keycloak Assurance Case 4 Diagram")
 
 Keycloak needs the use of databses for various reasons, and as such, the mitigation of the misuse of a database is needed. From input validation to properly hashed passwords, Keycloak needs to protect against all types of attacks against it.
 
