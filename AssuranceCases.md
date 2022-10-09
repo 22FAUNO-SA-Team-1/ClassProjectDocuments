@@ -47,10 +47,11 @@ E5: Assurance Case 1 works in parallel with the Server Security Report to serve 
 Conclusion and Gaps: Since Keycloak's primary function is authentication and authorization, it does not come as much of a surprise that no gaps were identified within this assurance case. Keycloak provides all of the necessary tools to prevent users from circumventing authorization, but it is up to administrative users within an organization to turn on optional settings like SSL/HTTPS and to ensure that the right roles and authorization policies are created to make use of these tools. Keycloak cannot protect organizations from their own bad policies, failure to comply with best practices (like zero trust), or failure to change default settings inside of Keycloak after initial set up.
 
 
-
 ### Assurance Case 4:
 
 ### Assurance Case 5:KeyCloak is sufficiently Available
 ![Keycloak Assurance Case 5 Diagram]( ./Diagrams/AssuranceCase5.drawio.png "Keycloak Assurance Case 5 Diagram")
 
 ## Reflection
+
+This portion of the project we initially found similar difficulties as we did last time.  Where last time we had some difficulty in deciding on use cases, this time we had some difficulty in narrowing down our top level assurance claims.  After internal communication and meeting with Dr. Gandhi we were able to select top level claims that we were familiar enough to be able to research them quickly, but would also fit the assignment requirements.  We divided labor quite similarly for the Assurance claims as we did with security requirements, where each member took a claim, completed a diagram, and searched for gaps between the claims and what Keycloak offers.  At this point in the project we feel like we've settled into comfortable semi-recurring roles where any difficulties are brought before the entire group for discussion, review, and if required any corrections.
