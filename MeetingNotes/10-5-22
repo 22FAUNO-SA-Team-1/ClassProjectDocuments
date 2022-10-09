@@ -1,49 +1,102 @@
-Security Requirements Meeting 2
+Assurance Meeting 2
+Meeting Date:  10/5/22 
 
-Wednesday, September 21, 2022
-12:22 PM
+Meeting Start Time:  4:15 PM 
 
-Meeting Date:  9/21/22
-Meeting Start Time:  4:15 PM
-Meeting End Time:  4:45 PM
+Meeting End Time:   4:45 PM 
 
-Next meeting time:  Next Wednesday 4:15 PM
-  Potential Review Meeting:  Sunday 7:30 PM
-Professor Checkin Meeting: Today 5:30 PM
+ 
 
-Attendance:
-    Chris Schaaf	X
-    Trenton Chramosta	 Work Conflict
-    Zach Lange	X
-    John Kieran	X
-    Ethen Kuether	X
+Next meeting time:  Next Wednesday 4:15 PM 
 
-Pre-meeting agenda: Review current work on security requirements
-   
-	• Checkout and review diagram work
-		○ Ask Dr. Gandhi about using HTTPS/SSL rather than bubbles for encryption and strong encryption
-	
-	• Discuss adding review comments to github issues before they are closed out
-	
-	• Discuss (if needed) security requirements discovered from diagram work thus far
+  Potential Review Meeting:  Sunday 7:30 PM 
 
-	• Discuss Secondary Assignments
-		○ Part 1 Reflection
-			§ Ethen - 
+Professor Checkin Meeting: Today 5:30 PM 
 
-		○ Documentation Review
-			§ John / Zach - 
-		
-		○ Planning / Reflection
-			§ Add more about group strategy
-				□ We assigned 1 use/misuse case per member and had each person find their own idea but we offered commentary and communication on what ideas may or may not work for the critical interactions
-			§ What we struggled with
-				□ Finding valid interactions that aren't overly simple and not convoluted
-				
-			§ how we overcame it
-				□ Time spent researching and offering ideas to everone in group
-			§ Group assignment reasoning
-	• ensure we link our project/issue board along with the repo when we submit
+ 
 
-Chris - Focus on input validation and buffer overflow
+Attendance: 
 
+    Chris Schaaf X 
+
+    Trenton Chramosta  X 
+
+    Zach Lange X 
+
+    John Kieran X 
+
+    Ethen Kuether X 
+
+ 
+
+Pre-meeting agenda:  
+
+Discuss assurance reductive reasoning cases and requirements for Assurance Case Deliverable 
+
+ 
+
+Discuss any individual questions regarding deliverable assignments 
+
+ 
+
+ 
+
+ 
+
+Meeting Notes: 
+
+ 
+
+Deliverable assignments 
+
+Assurance case diagrams - each member picks and covers their own (first claim basis for topics) 
+
+CRITICAL CLAIMS 
+
+Chris:  System properly authenticates users 
+
+Ethen:  Mitigates database Theft 
+
+John:  System prevents data from eavesdropping and man-in-the-middle 
+
+Zach:  System prevents privilege escalation, System prevents access to unassigned applications (Ask Dr. Gandhi) 
+
+Trenton: 
+
+Assurance claims comparison to project documentation (does the evidence found in each diagram jive with what the OOSP offers or are there security gaps) 
+
+Each member will cover their own case to point out gaps for part 2 of the deliverable 
+
+Initial Review 
+
+Ethen, John, Zach 
+
+Team planning and reflection 
+
+Chris 
+
+Project administration and final reviews 
+
+Trenton 
+
+ 
+
+PROFESSOR CHECKIN NOTES: 
+
+ 
+
+ask Dr. Gandhi if one top level claim can be used to support another claim from another diagram 
+
+ 
+
+Assurance claim can be used as evidence 
+
+ 
+
+ 
+
+ 
+
+Post meeting: 
+
+Trenton determined his CRITICAL CLAIM, "System is sufficiently available" 
