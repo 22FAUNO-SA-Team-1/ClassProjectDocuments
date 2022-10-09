@@ -30,7 +30,7 @@ Conclusion and Gaps:  After thorough review of Keycloak documentation, there wer
 
 ### Assurance Case 3: Keycloak Prevents Unauthorized Access to Clients
 
-![Keycloak Assurance Case 3 Diagram]( ./Diagrams/Assurance Case 3.png "Keycloak Assurance Case 3 Diagram")
+![Keycloak Assurance Case 3 Diagram]( ./Diagrams/AssuranceCase3.png "Keycloak Assurance Case 3 Diagram")
 
 One of Keycloak's key features is its ability to assign access to clients (applications). Once one or more applications are assigned to a user, varying roles governing permissions within those applications can also be assigned. For example, a bank using Keycloak may provide a customer with access that would come standard to any user with a checking account, but that user may also be assigned higher levels of access depending on what features the user requires. Perhaps in addition to the checking account, the user is granted the ability to utilize a wire transfer feature, or trading permissions for a 401k. Whatever the business reasoning, it is essential that role based access within Keycloak cannot be circumvented. This case assurance case aims to address that concern.
 
