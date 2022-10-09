@@ -49,7 +49,7 @@ Conclusion and Gaps: Since Keycloak's primary function is authentication and aut
 
 ### Assurance Case 4:
 
-![Keycloak Assurance Diagram]( ./Diagrams/Kuether_Assurance_Diagram.png "Keycloak Assurance Diagram")
+![Keycloak Assurance Case 4 Diagram]( ./Diagrams/Kuether_Assurance_Diagram.png "Keycloak Assurance Case 4 Diagram")
 
 Keycloak needs the use of databses for various reasons, and as such, the mitigation of the misuse of a database is needed. From input validation to properly hashed passwords, Keycloak needs to protect against all types of attacks against it.
 
@@ -64,7 +64,9 @@ E4: The Policy Information Point, is a point on keycloak's architecture that is 
 Conclusion and Gaps: While keycloak does mitigate database misuse, keycloak does not use a database a whole lot. One gap comes with the Protection API. While, this API does help protect the data, it is encrypted with BASE64 and can still be susceptible to man-in-the-middle attacks. 
 
 ### Assurance Case 5:Keycloak is sufficiently Available
-![Keycloak Assurance Diagram]( ./Diagrams/AssuranceCase5.drawio.png "Keycloak Assurance Diagram")
+
+![Keycloak Assurance Case 5 Diagram]( ./Diagrams/AssuranceCase5.drawio.png "Keycloak Assurance Case 5 Diagram")
+
 As an SSO enabler, Keycloak needs to be available when end users need to authenticate. This fails either when the server crashes (Administrator Side) or the Program breaks (Developer Side).
 
 E1: This Evidence is part of Organizational policies that do not need to addressed by Keycloak Developement, though it is a good thing to keep in mind. As such this is not a gap.
