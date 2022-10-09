@@ -38,3 +38,5 @@ Conclusion and Gaps:  After thorough review of Keycloak documentation, there wer
 ![Keycloak Assurance Diagram]( ./Diagrams/AssuranceCase5.drawio.png "Keycloak Assurance Diagram")
 
 ## Reflection
+
+This portion of the project we initially found similar difficulties as we did last time.  Where last time we had some difficulty in deciding on use cases, this time we had some difficulty in narrowing down our top level assurance claims.  After internal communication and meeting with Dr. Gandhi we were able to select top level claims that we were familiar enough to be able to research them quickly, but would also fit the assignment requirements.  We divided labor quite similarly for the Assurance claims as we did with security requirements, where each member took a claim, completed a diagram, and searched for gaps between the claims and what Keycloak offers.  At this point in the project we feel like we've settled into comfortable semi-recurring roles where any difficulties are brought before the entire group for discussion, review, and if required any corrections.
