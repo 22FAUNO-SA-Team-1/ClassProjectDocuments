@@ -4,7 +4,7 @@ Team OneWon
 
 ### Use Case 1: Implementing a Truststore
 
-![Keycloak System Engineering Diagram]( ./Diagrams/Truststore.png "Keycloak Trust Diagram")
+![Keycloak System Engineering Diagram]( ./Diagrams/SecReqDiagrams/Truststore.png "Keycloak Trust Diagram")
 
 #### Description
 
@@ -30,7 +30,7 @@ The Keycloak truststore is created and maintained using the pre-built Java "keyt
 
 ### Use Case 2: Creating a Realm
 
-![Keycloak Realm Diagram]( ./Diagrams/realmv4.png "Keycloak Realm Diagram")
+![Keycloak Realm Diagram]( ./Diagrams/SecReqDiagrams/realmv4.png "Keycloak Realm Diagram")
 
 #### Description
 
@@ -52,7 +52,7 @@ It is absolutely essential that Keycloak administrators take security precaution
 
 ### Use Case 3:  User Management
 
-![]( ./Diagrams/UsersMUCv2.png)
+![]( ./Diagrams/SecReqDiagrams/UsersMUCv2.png)
 
 #### Description
 Proper user and admin account management is critical for any application and Keycloak offers a variety of ways to add, secure, and maintain a collection of authorized users.  Users can be added directly through the web interface dashboard by an admin, as well as via via shell commands or even queried via LDAP or another user database service.  Users can also be assigned a Realm at creation, or Realm affiliation can be changed later at the admin's discretion.  This scenario will explore ensuring your user accounts are created securely and not maliciously manipulated.
@@ -75,7 +75,7 @@ Finally, in the case where user accounts are queried from an LDAP server, an att
 
 ### Use Case 4: Authorizing a User
 
-![Keycloak Authorization Diagram]( ./Diagrams/Ethen_Kuether_Authorization_UseCase.jpg "Keycloak Authorization Diagram")
+![Keycloak Authorization Diagram]( ./Diagrams/SecReqDiagrams/Ethen_Kuether_Authorization_UseCase.jpg "Keycloak Authorization Diagram")
 
 #### Description
 User authentication is important for any application, especially Keycloak. Keycloak is a tool to help manage user authorizations and helps implement features such as single sign on (SSO), Dual Factor Authentication, and the use of Active Directory, plus many more tools. With an application that holds up the front line of many other applications, it is important that the user authentication is secure. Malicious actors should not be able to sign on as other employees as that would compromise not just one application, but many.
@@ -94,7 +94,7 @@ The main misuse case involves an entity trying to steal accounts. The first misu
 
 ### Use Case 5: Hosting a Keycloak server
 
-![Hosting Keycloak Diagram](./Diagrams/TCusecasev2.png "Hosting Keycloak Diagram")
+![Hosting Keycloak Diagram](./Diagrams/SecReqDiagrams/TCusecasev2.png "Hosting Keycloak Diagram")
 #### Description
 
 Keeping High Uptime on a SSO service like Keycloak is important since if it lags the entire user base will lag thus decreasing organizational efficiency.
