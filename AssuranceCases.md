@@ -12,6 +12,8 @@ E1:  Regular auditing of system logs are needed to protect the integrity of the 
 
 E2:  A poor certificate using weak encryption can allow for easier credential interception.  SSL certificates should never be self-signed and always acquired from a trusted Certificate Authority using industry-standard RSA 2048-bit or higher key length.
 
+Conclusion and Gaps:  Adding a truststore is a simple measure to vastly increase the security of a Keycloak instance to eliminate man-in-the-middle attacks.  As the truststore has no underlying prerequisites, the opportunity for any gaps is limited and, in fact, none were detected in this case.  Furthermore, SSL handshakes are a binary operation where they are either established by both parties or not at all.  The main consideration is to use a high bit certificate issued by a trusted authority, and this is easy to verify as modern browsers will display a warning when a weak certificate or one issued by an known authority is detected.  Other responsibility will fall upon the Keycloak administrator to audit any changes to the truststore.
+
 ### Assurance Case 2:  Keycloak ensures all users are authenticated before being allowed access to applications or other resources
 
 ![Keycloak Assurance Case 2 Diagram]( ./Diagrams/cs_assurance_claim.png "Keycloak Assurance Case 2 Diagram")
