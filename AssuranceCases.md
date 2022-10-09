@@ -53,13 +53,11 @@ Conclusion and Gaps: Since Keycloak's primary function is authentication and aut
 
 Keycloak needs the use of databses for various reasons, and as such, the mitigation of the misuse of a database is needed. From input validation to properly hashed passwords, Keycloak needs to protect against all types of attacks against it.
 
-E1: The evidence here is directly related to the main-in-the-middle attacks, with proper user authentication needed. This evidence is also directly related to Assurance Case 2 as well.
+E1: The evidence is directly related to Assurance Case 2.
 
-E2: All passwords utilize the SHA256 Hash, which is known to be a strong hashing algorithm.
+E2: The protection API helps encrypt and send protected data.
 
-E3: The protection API helps encrypt and send protected data.
-
-E4: The Policy Information Point, is a point on keycloak's architecture that is directly related to auditing all the events that happen within keycloak.
+E3: The Policy Information Point, is a point on keycloak's architecture that is directly related to auditing all the events that happen within keycloak.
 
 Conclusion and Gaps: While keycloak does mitigate database misuse, keycloak does not use a database a whole lot. One gap comes with the Protection API. While, this API does help protect the data, it is encrypted with BASE64 and can still be susceptible to man-in-the-middle attacks. 
 
