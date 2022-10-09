@@ -34,6 +34,8 @@ Conclusion and Gaps:  After thorough review of Keycloak documentation, there wer
 
 ### Assurance Case 4:
 
+![Keycloak Assurance Diagram]( ./Diagrams/Kuether_Assurance_Diagram.png "Keycloak Assurance Diagram")
+
 ### Assurance Case 5:Keycloak is sufficiently Available
 ![Keycloak Assurance Diagram]( ./Diagrams/AssuranceCase5.drawio.png "Keycloak Assurance Diagram")
 As an SSO enabler, Keycloak needs to be available when end users need to authenticate. This fails either when the server crashes (Administrator Side) or the Program breaks (Developer Side).
