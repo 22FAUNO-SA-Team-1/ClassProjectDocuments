@@ -22,7 +22,7 @@ E2:  A poor certificate using weak encryption can allow for easier credential in
 
 ### Assurance Case 4:
 
-### Assurance Case 5:
-
+### Assurance Case 5:KeyCloak is sufficiently Available
+![Keycloak Assurance Diagram]( ./Diagrams/AssuranceCase5.drawio.png "Keycloak Assurance Diagram")
 
 ## Reflection
