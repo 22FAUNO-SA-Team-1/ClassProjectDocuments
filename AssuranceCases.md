@@ -32,23 +32,21 @@ Conclusion and Gaps:  After thorough review of Keycloak documentation, there wer
 
 ![Keycloak Assurance Diagram]( ./Diagrams/AssuranceCase3.png "Keycloak Assurance Diagram")
 
-One of Keycloak's key features is its ability to assign access to clients (applications). Once one or more applications are assigned to a user, varying roles governing permissions within those applications can also be assigned. For example, a bank using Keycloak may provide a customer with access that would come standard to any user with a checking account, but that user may also be assigned higher levels of access depending on what features the user requires. Perhaps in addition to the checking account, the user is granted the ability to utilize a wire transfer feature, or trading permissions for a 401k. Whatever the business reasoning, it is essential that role based access within Keycloak cannot be circumvented. This case assurance case aims to address that concern.
-
-E1: Assurance case 2 serves as evidence that authentication in Keycloak is secure, as long as all recommendations and associated evidence found within are followed, and appropriate action is taken during initial setup of the Keycloak server. 
-
-E2: Authorization Policy review report - Should consist of a periodic check to ensure that authorization policies are enabled, and set to "enforcing" mode. In addition to these settings, it is recommended that an authorization policy review report check that all resources within Keycloak have policies associated with them. It serves no purpose if policy enforcement is enabled, but no policy exists to enforce. 
-
-E3: Zero Trust Architecture Report - It is strongly recommended that any organization using Keycloak adopt a zero trust architecture for their user roles. In other words, each user should have exactly the access they need and no more. This means that each new user should start with absolutely no access to any clients. Instead, new users should only receive access to those applications necessary to perform any required actions, and that only those roles with the necessary permissions are assigned within the applications. Under no circumstances should default applications / roles / permissions be automatically assigned to new users unless it is deemed that the default applications / roles / permissions are essential for all possible users within the organization. 
-
-E4: Server Security Review Report - While ensuring the right users have the right access is critical to authorization, it is equally critical that authorization be transmitted securely. Most of the required action for ensuring secure transmission of authorization should be addressed when a Keycloak realm is initially set up. Settings that enforce authorization token security and transmission of data via SSL/HTTPs are found within the admin console of each realm. The purpose of the Server Security Review Report is to periodically check to ascertain that proper security settings are enabled for the master realm and any sub-realm an organization has created within Keycloak.
-
-E5: Assurance Case 1 works in parallel with the Server Security Report to serve as evidence of secure transmission of user authorization, as long as all recommendations and associated evidence found within are followed, and appropriate action is taken during initial setup of the Keycloak server.
-
-Conclusion and Gaps: Since Keycloak's primary function is authentication and authorization, it does not come as much of a surprise that no gaps were identified within this assurance case. Keycloak provides all of the necessary tools to prevent users from circumventing authorization, but it is up to administrative users within an organization to turn on optional settings like SSL/HTTPS and to ensure that the right roles and authorization policies are created to make use of these tools. Keycloak cannot protect organizations from their own bad policies, failure to comply with best practices (like zero trust), or failure to change default settings inside of Keycloak after initial set up.
-
 ### Assurance Case 4:
 
 ![Keycloak Assurance Diagram]( ./Diagrams/Kuether_Assurance_Diagram.png "Keycloak Assurance Diagram")
+
+Keycloak needs the use of databses for various reasons, and as such, the mitigation of the misuse of a database is needed. From input validation to properly hashed passwords, Keycloak needs to protect against all types of attacks against it.
+
+E1: The evidence here is directly related to the main-in-the-middle attacks, with proper user authentication needed. This evidence is also directly related to Assurance Case 2 as well.
+
+E2: All passwords utilize the SHA256 Hash, which is known to be a strong hashing algorithm.
+
+E3: The protection API helps encrypt and send protected data.
+
+E4: The Policy Information Point, is a point on keycloak's architecture that is directly related to auditing all the events that happen within keycloak.
+
+Conclusion and Gaps: While keycloak does mitigate database misuse, keycloak does not use a database a whole lot. One gap comes with the Protection API. While, this API does help protect the data, it is encrypted with BASE64 and can still be susceptible to man-in-the-middle attacks. 
 
 ### Assurance Case 5:Keycloak is sufficiently Available
 ![Keycloak Assurance Diagram]( ./Diagrams/AssuranceCase5.drawio.png "Keycloak Assurance Diagram")
