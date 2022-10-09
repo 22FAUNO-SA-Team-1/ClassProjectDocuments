@@ -65,7 +65,7 @@ Conclusion and Gaps: While keycloak does mitigate database misuse, keycloak does
 
 ### Assurance Case 5:Keycloak is sufficiently Available
 
-![Keycloak Assurance Case 5 Diagram]( ./Diagrams/AssuranceCase5.drawio.png "Keycloak Assurance Case 5 Diagram")
+![Keycloak Assurance Case 5 Diagram](./Diagrams/AssuranceCase5.drawio.png "Keycloak Assurance Case 5 Diagram")
 
 As an SSO enabler, Keycloak needs to be available when end users need to authenticate. This fails either when the server crashes (Administrator Side) or the Program breaks (Developer Side).
 
