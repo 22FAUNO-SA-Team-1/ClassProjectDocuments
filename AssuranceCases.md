@@ -4,7 +4,7 @@ Team OneWon
 
 ### Assurance Case 1: Keycloak Prevents Man-In-The-Middle Attacks
 
-![Keycloak Assurance Case 1 Diagram]( ./Diagrams/jk_assurance_case1.png "Keycloak Assurance Case 1 Diagram")
+![Keycloak Assurance Case 1 Diagram]( ./Diagrams/Revised%20Assurance%20Case%20Diagrams/AssuranceCase1.png "Keycloak Assurance Case 1 Diagram")
 
 Keycloak allows for integration between multiple platforms which can require credentials to be passed between endpoints.  Credential theft through network eavesdropping is a risk which can be eliminated using a properly configured truststore.  The truststore allows for encrypted SSL connections in order to protect user credentials.
 
@@ -14,9 +14,9 @@ E2:  A poor certificate using weak encryption can allow for easier credential in
 
 Conclusion and Gaps:  Adding a truststore is a simple measure to vastly increase the security of a Keycloak instance to eliminate man-in-the-middle attacks.  As the truststore has no underlying prerequisites, the opportunity for any gaps is limited and, in fact, none were detected in this case.  Furthermore, SSL handshakes are a binary operation where they are either established by both parties or not at all.  The main consideration is to use a high-bit certificate issued by a trusted authority, and this is easy to verify as modern browsers will display a warning when a weak certificate or one issued by an unknown authority is detected.  Other responsibility will fall upon the Keycloak administrator to audit any changes to the truststore.
 
-### Assurance Case 2:  Keycloak ensures all users are authenticated before being allowed access to applications or other resources
+### Assurance Case 2:  Keycloak Ensures All Users Are Authenticated Before Being Allowed Access to Applications or Other Resources
 
-![Keycloak Assurance Case 2 Diagram]( ./Diagrams/cs_assurance_claim.png "Keycloak Assurance Case 2 Diagram")
+![Keycloak Assurance Case 2 Diagram]( ./Diagrams/Revised%20Assurance%20Case%20Diagrams/AssuranceCase2.png "Keycloak Assurance Case 2 Diagram")
 
 Keycloak has many features, among which is the ability for an organization to utilize Keycloak and offload much of the overhead and resources required for properly secure user authentication.  If, however, an organization is going to entrust authentication to a 3rd party like Keycloak, there must exist sufficient assurance that their applications and resources will be safe from unauthenticated user interactions.  In direct response to this, Keycloak has a plethora of settings which, when properly utilized, will offer that assurance to an organization.
 
@@ -32,7 +32,7 @@ Conclusion and Gaps:  After thorough review of Keycloak documentation, there wer
 
 ### Assurance Case 3: Keycloak Prevents Unauthorized Access to Clients
 
-![Keycloak Assurance Case 3 Diagram]( ./Diagrams/AssuranceCase3.png "Keycloak Assurance Case 3 Diagram")
+![Keycloak Assurance Case 3 Diagram]( ./Diagrams/Revised%20Assurance%20Case%20Diagrams/AssuranceCase3.png "Keycloak Assurance Case 3 Diagram")
 
 One of Keycloak's key features is its ability to assign access to clients (applications). Once one or more applications are assigned to a user, varying roles governing permissions within those applications can also be assigned. For example, a bank using Keycloak may provide a customer with access that would come standard to any user with a checking account, but that user may also be assigned higher levels of access depending on what features the user requires. Perhaps in addition to the checking account, the user is granted the ability to utilize a wire transfer feature, or trading permissions for a 401k. Whatever the business reasoning, it is essential that role based access within Keycloak cannot be circumvented. This case assurance case aims to address that concern.
 
@@ -49,9 +49,9 @@ E5: Assurance Case 1 works in parallel with the Server Security Report to serve 
 Conclusion and Gaps: Since Keycloak's primary function is authentication and authorization, it does not come as much of a surprise that no gaps were identified within this assurance case. Keycloak provides all of the necessary tools to prevent users from circumventing authorization, but it is up to administrative users within an organization to turn on optional settings like SSL/HTTPS and to ensure that the right roles and authorization policies are created to make use of these tools. Keycloak cannot protect organizations from their own bad policies, failure to comply with best practices (like zero trust), or failure to change default settings inside of Keycloak after initial set up.
 
 
-### Assurance Case 4:
+### Assurance Case 4: Keycloak Mitigates Malicious Database Use
 
-![Keycloak Assurance Case 4 Diagram]( ./Diagrams/AssuranceCase4.png "Keycloak Assurance Case 4 Diagram")
+![Keycloak Assurance Case 4 Diagram]( ./Diagrams/Revised%20Assurance%20Case%20Diagrams/AssuranceCase4.png "Keycloak Assurance Case 4 Diagram")
 
 Keycloak needs the use of databses for various reasons, and as such, the mitigation of the misuse of a database is needed. From input validation to properly hashed passwords, Keycloak needs to protect against all types of attacks against it.
 
@@ -63,9 +63,9 @@ E3: The Policy Information Point, is a point on keycloak's architecture that is 
 
 Conclusion and Gaps: While keycloak does mitigate database misuse, keycloak does not use a database a whole lot. One gap comes with the Protection API. While, this API does help protect the data, it is encrypted with BASE64 and can still be susceptible to man-in-the-middle attacks. 
 
-### Assurance Case 5:Keycloak is sufficiently Available
+### Assurance Case 5:Keycloak Is Sufficiently Available
 
-![Keycloak Assurance Case 5 Diagram](./Diagrams/AssuranceCase5.drawio.png "Keycloak Assurance Case 5 Diagram")
+![Keycloak Assurance Case 5 Diagram](./Diagrams/Revised%20Assurance%20Case%20Diagrams/AssuranceCase5.png "Keycloak Assurance Case 5 Diagram")
 
 As an SSO enabler, Keycloak needs to be available when end users need to authenticate. This fails either when the server crashes (Administrator Side) or the Program breaks (Developer Side).
 
