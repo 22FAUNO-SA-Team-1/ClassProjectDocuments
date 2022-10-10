@@ -53,15 +53,15 @@ Conclusion and Gaps: Since Keycloak's primary function is authentication and aut
 
 ![Keycloak Assurance Case 4 Diagram]( ./Diagrams/Revised%20Assurance%20Case%20Diagrams/AssuranceCase4.png "Keycloak Assurance Case 4 Diagram")
 
-Keycloak needs the use of databses for various reasons, and as such, the mitigation of the misuse of a database is needed. From input validation to properly hashed passwords, Keycloak needs to protect against all types of attacks against it.
+Keycloak needs the use of databases for various reasons, and as such, the mitigation of the misuse of a database is needed. From input validation to properly hashed passwords, Keycloak needs to protect against all types of attacks against it.
 
 E1: The evidence is directly related to Assurance Case 2.
 
 E2: The protection API helps encrypt and send protected data.
 
-E3: The Policy Information Point, is a point on keycloak's architecture that is directly related to auditing all the events that happen within keycloak.
+E3: The Policy Information Point, is a point on Keycloak's architecture that is directly related to auditing all the events that happen within Keycloak.
 
-Conclusion and Gaps: While keycloak does mitigate database misuse, keycloak does not use a database a whole lot. One gap comes with the Protection API. While, this API does help protect the data, it is encrypted with BASE64 and can still be susceptible to man-in-the-middle attacks. 
+Conclusion and Gaps: While Keycloak does mitigate database misuse, Keycloak does not use a database a whole lot. One gap comes with the Protection API. While, this API does help protect the data, it is encrypted with BASE64 and can still be susceptible to man-in-the-middle attacks. 
 
 ### Assurance Case 5:Keycloak Is Sufficiently Available
 
@@ -69,13 +69,13 @@ Conclusion and Gaps: While keycloak does mitigate database misuse, keycloak does
 
 As an SSO enabler, Keycloak needs to be available when end users need to authenticate. This fails either when the server crashes (Administrator Side) or the Program breaks (Developer Side).
 
-E1: This Evidence is part of Organizational policies that do not need to addressed by Keycloak Developement, though it is a good thing to keep in mind. As such this is not a gap.
+E1: This Evidence is part of Organizational policies that do not need to addressed by Keycloak Development, though it is a good thing to keep in mind. As such this is not a gap.
 
 E2: See E1.
  
 E3: See E1.
 
-E4: The bug fix ledger is essentially the difference between open bugs and resolved bugs. For Keycloak this is synonomous with their issues tab in GitHub. As of 10/9/22 @12PM, All their critical bugs are fixed as evident [here](https://github.com/keycloak/keycloak/issues?q=is%3Aissue+is%3Aclosed+label%3Apriority%2Fcritical+label%3Akind%2Fbug).
+E4: The bug fix ledger is essentially the difference between open bugs and resolved bugs. For Keycloak this is synonymous with their issues tab in GitHub. As of 10/9/22 @12PM, All their critical bugs are fixed as evident [here](https://github.com/keycloak/keycloak/issues?q=is%3Aissue+is%3Aclosed+label%3Apriority%2Fcritical+label%3Akind%2Fbug).
 
 E5:This evidence along with E6 and E7 are related. Keycloak has 2 centralized Unit Test files, one for [Configuration](https://github.com/keycloak/keycloak/blob/main/quarkus/runtime/src/test/java/org/keycloak/quarkus/runtime/configuration/test/ConfigurationTest.java) and one for [RegEx](https://github.com/keycloak/keycloak/blob/main/quarkus/runtime/src/test/java/org/keycloak/quarkus/runtime/configuration/test/ConfigRegExPatternMatchingTest.java). If the problem occurs outside of those categories the Keycloak repo has no dedicated spots to work on additional Unit Tests. This could been seen as a partial gap.
 
