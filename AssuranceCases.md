@@ -12,23 +12,23 @@ E1:  Regular auditing of system logs are needed to protect the integrity of the 
 
 E2:  A poor certificate using weak encryption can allow for easier credential interception.  SSL certificates should never be self-signed and always acquired from a trusted Certificate Authority using industry-standard RSA 2048-bit or higher key length.
 
-Conclusion and Gaps:  Adding a truststore is a simple measure to vastly increase the security of a Keycloak instance to eliminate man-in-the-middle attacks.  As the truststore has no underlying prerequisites, the opportunity for any gaps is limited and, in fact, none were detected in this case.  Furthermore, SSL handshakes are a binary operation where they are either established by both parties or not at all.  The main consideration is to use a high-bit certificate issued by a trusted authority, and this is easy to verify as modern browsers will display a warning when a weak certificate or one issued by an unknown authority is detected.  Other responsibility will fall upon the Keycloak administrator to audit any changes to the truststore.
+Conclusion and Gaps:  Adding a truststore is a simple measure to vastly increase the security of a Keycloak instance to eliminate man-in-the-middle attacks.  As the truststore has no underlying prerequisites, the opportunity for any gaps is limited and, in fact, none were detected in this case.  Furthermore, SSL handshakes are a binary operation where they are either established by both parties or not at all.  The main consideration is to use a high-bit certificate issued by a trusted authority, and this is easy to verify as modern browsers will display a warning when a weak certificate or one issued by an unknown authority is detected.  Other responsibilities will fall upon the Keycloak administrator to audit any changes to the truststore.
 
 ### Assurance Case 2:  Keycloak Ensures All Users Are Authenticated Before Being Allowed Access to Applications or Other Resources
 
 ![Keycloak Assurance Case 2 Diagram]( ./Diagrams/Revised%20Assurance%20Case%20Diagrams/AssuranceCase2.png "Keycloak Assurance Case 2 Diagram")
 
-Keycloak has many features, among which is the ability for an organization to utilize Keycloak and offload much of the overhead and resources required for properly secure user authentication.  If, however, an organization is going to entrust authentication to a 3rd party like Keycloak, there must exist sufficient assurance that their applications and resources will be safe from unauthenticated user interactions.  In direct response to this, Keycloak has a plethora of settings which, when properly utilized, will offer that assurance to an organization.
+Keycloak has many features, among which is the ability for an organization to utilize Keycloak and offload most of the overhead and resources required for properly secure user authentication.  If, however, an organization is going to entrust authentication to a 3rd party like Keycloak, there must exist sufficient assurance that their applications and resources will be safe from unauthenticated user interactions.  In direct response to this, Keycloak has a plethora of settings which, when properly utilized, will offer that assurance to an organization.
 
 E1:  2FA Policy Review Report - An organization utilizing Keycloak must regularly conduct a review of the Two-Factor Authentication Policy in order to ensure that all users, existing and new, have the proper settings in the Keycloak dashboard in order to enforce the usage of 2FA for their accounts.  This will help mitigate phishing attempts and minimize damage caused by user credentials being gained externally to the system.
 
-E2:  Passwords are stored quite safely in a hashed format utilizing a strong hashing algorithm (PBKDF2) with a default of 27,500 hashing iterations per hashed password.  Admins can tweak these settings if needed as this is can be resource intensive when adding many users at once but the default settings are best kept for security.  A combination of reviewing the source code and reviewing the settings in the Keycloak dashboard will ensure passwords are stored in a safe hashed format.
+E2:  Passwords are stored quite safely in a hashed format utilizing a strong hashing algorithm (PBKDF2) with a default of 27,500 hashing iterations per hashed password.  Admins can tweak these settings if needed as this is can be resource intensive when onboarding many users but the default settings are best kept for security.  A combination of reviewing the source code and reviewing the settings in the Keycloak dashboard will ensure passwords are stored in a safe hashed format.
 
 E3:  Regular reviews of Password Policy are strongly recommended in order to ensure users are using safe and strong passwords for their accounts.
 
 E4:  Regular reviews are recommended of both the source code and the Keycloak dashboard settings in order to ensure that brute force detection is always in place and enforced at all times.
 
-Conclusion and Gaps:  After thorough review of Keycloak documentation, there were **NO** gaps found in regards to user authentication.  Each of the pathways of attack has an answer provided by Keycloak accessed by an administrator through the dashboard.  Passwords are stored in hashed format using a strong hashing algorithm with many hashing iterations per hashed password.  Proper password use can be hard-enforced by Keycloak rather than recommended by administrators or organization management.  User passwords can be required to have a set minimum of characters (recommended minimum is 8, and a minimum greater than 14 is overkill) and can require special characters, numbers, capitals and lowercase characters.  Keycloak even stores a history of old passwords for each user and can prevent the reuse of those passwords within a determined time period.  Even brute force detection and 2FA have settings in the Keycloak dashboard that can mitigate and prevent unauthenticated access.
+Conclusion and Gaps:  After thorough review of Keycloak documentation, there were **NO** gaps found in regards to user authentication.  Each of the pathways of attack has an answer provided by Keycloak accessed by an administrator through the dashboard.  Passwords are stored in hashed format using a strong hashing algorithm with many iterations per hashed password.  Proper password use can be hard-enforced by Keycloak rather than recommended by administrators or organization management.  User passwords can be required to have a set minimum of characters and can require special characters, numbers, capitals and lowercase characters.  Keycloak stores a history of old passwords for each user and can prevent the reuse of those passwords within a determined time period.  Additionally, brute force detection and 2FA have settings in Keycloak's dashboard that can mitigate and prevent unauthenticated access.
 
 ### Assurance Case 3: Keycloak Prevents Unauthorized Access to Clients
 
@@ -61,7 +61,7 @@ E2: The protection API helps encrypt and send protected data.
 
 E3: The Policy Information Point, is a point on Keycloak's architecture that is directly related to auditing all the events that happen within Keycloak.
 
-Conclusion and Gaps: While Keycloak does mitigate database misuse, Keycloak does not use a database a whole lot. One gap comes with the Protection API. While, this API does help protect the data, it is encrypted with BASE64 and can still be susceptible to man-in-the-middle attacks. 
+Conclusion and Gaps: While Keycloak does mitigate database misuse, Keycloak does not use a database often. One gap comes with the Protection API. While, this API does help protect the data, it is encrypted with BASE64 and can still be susceptible to man-in-the-middle attacks. 
 
 ### Assurance Case 5:Keycloak Is Sufficiently Available
 
@@ -69,7 +69,7 @@ Conclusion and Gaps: While Keycloak does mitigate database misuse, Keycloak does
 
 As an SSO enabler, Keycloak needs to be available when end users need to authenticate. This fails either when the server crashes (Administrator Side) or the Program breaks (Developer Side).
 
-E1: This Evidence is part of Organizational policies that do not need to addressed by Keycloak Development, though it is a good thing to keep in mind. As such this is not a gap.
+E1: This Evidence is part of Organizational policies that do not need to addressed by Keycloak Development, though it is a good thing to keep in mind.
 
 E2: See E1.
  
@@ -85,7 +85,7 @@ E7: There is no centralized documentation for what the Unit Test files include. 
 
 E8: This evidence is related to E4. The documentation for bug fixes can be found via the Keycloak repo's [closed issues](https://github.com/keycloak/keycloak/issues?q=is%3Aissue+is%3Aclosed).
 
-Conclusion and Gaps: After reviewing Keycloak's documentation and repo, there was 1 partial gap discovered with Unit Test and a potential gap with Unit Test documentation.
+Conclusion and Gaps: After reviewing Keycloak's documentation and repo, there was 1 partial gap discovered with Unit Tests and a potential gap with Unit Test documentation.
 
 ## Reflection
 
