@@ -18,6 +18,8 @@ Part 2 - [Security Requirements](./SecurityRequirements.md)
 
 Part 3 - [Assurance Cases](./AssuranceCases.md)
 
+Part 4 - [Design For Sofware Security](./Design.md)
+
 ### Misc
 
 [Meeting Notes](./MeetingNotes)
