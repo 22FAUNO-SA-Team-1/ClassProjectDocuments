@@ -13,64 +13,64 @@
 ### 3. Individual Threat Review
 <!--Start of Chris' Threats -->
 - *Threat ID*: 1.
-    - Threat Name: 
-    - Threat Category: 
+    - Threat Name:  Potential Excessive Resource Consumption for Keycloak or Truststore
+    - Threat Category:  Denial of Service
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 2.
-    - Threat Name:
-    - Threat Category:
+    - Threat Name:  Spoofing of Destination Data Store Truststore
+    - Threat Category:  Spoofing
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 3.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name:  Spoofing of Source Data Store Truststore
+    - Threat Category:  Spoofing
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 4.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name:  Weak Access Control for a Resource
+    - Threat Category:  Information Disclosure
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 5.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name:  Data Flow LDAP Authentication Request Is Potentially Interrupted
+    - Threat Category:  Denial of Service
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 6.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name:  External Entity LDAP Server Potentially Denies Receiving Data
+    - Threat Category:  Repudiation
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 7.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name:  Spoofing of the LDAP Server External Destination Entity
+    - Threat Category:  Spoofing
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 8.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name:  Cross Site Request Forgery
+    - Threat Category:  Elevation of Privilege
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 9.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name:  Elevation by Changing the Execution Flow in Keycloak
+    - Threat Category:  Elevation of Privilege
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
