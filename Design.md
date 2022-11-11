@@ -139,67 +139,67 @@
     - Notable Gap:
 
 - *Threat ID*: 19.
-    - Threat Name:
-    - Threat Category: 
-    - Justification:
+    - Threat Name: Spoofing the User External Entity
+    - Threat Category: Spoofing
+    - Justification: 
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 20.
-    - Threat Name:
-    - Threat Category: 
-    - Justification:
+    - Threat Name: Elevation Using Impersonation
+    - Threat Category: Elevation Of Privilege
+    - Justification: 
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 21.
-    - Threat Name:
-    - Threat Category: 
-    - Justification:
+    - Threat Name: Cross Site Request Forgery
+    - Threat Category: Elevation Of Privilege
+    - Justification: 
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 22.
-    - Threat Name:
-    - Threat Category: 
-    - Justification:
-    - Existing Mitigations:
+    - Threat Name: Elevation by Changing the Execution Flow in Keycloak
+    - Threat Category: Elevation Of Privilege
+    - Justification: 
+    - Existing Mitigations: 
     - Notable Gap:
 
 - *Threat ID*: 23.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name: Keycloak May be Subject to Elevation of Privilege Using Remote Code Execution
+    - Threat Category: Elevation Of Privilege
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 24.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name: Data Flow User Input Is Potentially Interrupted
+    - Threat Category: Denial Of Service
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 25.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name: Potential Process Crash or Stop for Keycloak
+    - Threat Category: Denial Of Service
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 26.
-    - Threat Name:
-    - Threat Category: 
-    - Justification:
+    - Threat Name: Data Flow Sniffing
+    - Threat Category: Information Disclosure
+    - Justification: 
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 27.
-    - Threat Name:
-    - Threat Category: 
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Threat Name: Potential Data Repudiation by Keycloak
+    - Threat Category: Repudiation
+    - Justification: Keycloak audits all actions
+    - Existing Mitigations: Auditing is a critical part of Keycloak's architecture
+    - Notable Gap: None
 
 - *Threat ID*: 28.
     - Threat Name: Potential Lack of Input Validation for Keycloak
