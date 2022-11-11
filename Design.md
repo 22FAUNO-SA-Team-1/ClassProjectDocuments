@@ -41,11 +41,11 @@
     - Notable Gap:
 
 - *Threat ID*: 5.
-    -Threat Name:
-    -Threat Category: 
-    -Justification:
-    -Existing Mitigations:
-    -Notable Gap:
+    - Threat Name:
+    - Threat Category: 
+    - Justification:
+    - Existing Mitigations:
+    - Notable Gap:
 
 - *Threat ID*: 6.
     - Threat Name:
@@ -62,11 +62,11 @@
     - Notable Gap:
 
 - *Threat ID*: 8.
-    -Threat Name:
-    -Threat Category: 
-    -Justification:
-    -Existing Mitigations:
-    -Notable Gap:
+    - Threat Name:
+    - Threat Category: 
+    - Justification:
+    - Existing Mitigations:
+    - Notable Gap:
 
 - *Threat ID*: 9.
     - Threat Name:
