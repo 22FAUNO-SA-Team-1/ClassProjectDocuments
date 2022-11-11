@@ -4,8 +4,8 @@
 
 ### 1. Data Flow Diagram and Threat Modeling
 
-1. [Keycloak DFD]()
-2. [Threat Modeling Report](https://htmlpreview.github.io/?https://github.com/22FAUNO-SA-Team-1/ClassProjectDocuments/blob/06553c15d0b7b3891fa87d4752ec526f2a0c30dc/Diagrams/Part%204/Keycloak%20Threat%20Report.html)
+1. [Keycloak DFD](https://github.com/22FAUNO-SA-Team-1/ClassProjectDocuments/blob/70ef72df39501e67f1419819c7d63b5194a6ec71/Diagrams/Part%204/DFD%20Model%20Screenshot.PNG)
+2. [Threat Modeling Report](https://htmlpreview.github.io/?https://github.com/22FAUNO-SA-Team-1/ClassProjectDocuments/blob/39a5ba295d804d09f1305d362b79e30f07344579/Diagrams/Part%204/Keycloak%20Threat%20Report.htm)
 
 ### 2. Introduction
 
