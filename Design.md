@@ -202,63 +202,63 @@
     - Notable Gap:
 
 - *Threat ID*: 28.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name: Potential Lack of Input Validation for Keycloak
+    - Threat Category: Tampering
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 29.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name: Spoofing the Keycloak Process
+    - Threat Category: Spoofing
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 30.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name: Data Flow User Input Is Potentially Interrupted
+    - Threat Category: Denial Of Service
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 31.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name: External Entity Web Application Potentially Denies Receiving Data
+    - Threat Category: Repudiation
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 32.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name: Spoofing of the Web Application External Destination Entity
+    - Threat Category: Spoofing
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 33.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name: Spoofing the Web Application External Entity
+    - Threat Category: Spoofing
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 - *Threat ID*: 34.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name: Elevation Using Impersonation
+    - Threat Category: Elevation Of Privilege
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 35.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name: Spoofing the Keycloak Process
+    - Threat Category: Spoofing
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 36.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name: Potential Lack of Input Validation for Keycloak
+    - Threat Category: Tampering
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
