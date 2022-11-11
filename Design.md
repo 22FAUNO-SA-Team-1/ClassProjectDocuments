@@ -11,7 +11,7 @@
 
 
 ### 3. Individual Threat Review
-
+<!--Start of Chris' Threats -->
 - *Threat ID*: 1.
     - Threat Name: 
     - Threat Category: 
@@ -75,6 +75,7 @@
     - Existing Mitigations:
     - Notable Gap:
 
+<!--Start of John's Threats -->
 - *Threat ID*: 10.
     - Threat Name:
     - Threat Category: 
@@ -138,6 +139,7 @@
     - Existing Mitigations:
     - Notable Gap:
 
+<!--Start of Ethen's Threats -->
 - *Threat ID*: 19.
     - Threat Name: Spoofing the User External Entity
     - Threat Category: Spoofing
@@ -201,6 +203,7 @@
     - Existing Mitigations: Auditing is a critical part of Keycloak's architecture
     - Notable Gap: None
 
+<!--Start of Zach's Threats -->
 - *Threat ID*: 28.
     - Threat Name: Potential Lack of Input Validation for Keycloak
     - Threat Category: Tampering
@@ -263,6 +266,7 @@
     - Existing Mitigations:
     - Notable Gap:
 
+<!--Start of Trenton's Threats -->
 - *Threat ID*: 37.
     - Threat Name:
     - Threat Category: 
@@ -338,3 +342,9 @@
 ### 4.1 Notable Gaps:
 
 ### 5. Reflection
+
+
+## Misc
+[Back to Table of Contents](./README.md)
+
+[Project Board for this section](https://github.com/orgs/22FAUNO-SA-Team-1/projects/5/views/1)
