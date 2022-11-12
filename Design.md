@@ -214,57 +214,58 @@
 - *Threat ID*: 29.
     - Threat Name: Spoofing the Keycloak Process
     - Threat Category: Spoofing
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification: Keycloak allows Open Redirects
+    - Existing Mitigations: Written configuration recommendation
+    - Notable Gap: If an administrator does not make a redirect uri sufficiently specific, or if a user is already authenticated and redirect uris have not been configured, spoofing Keycloak is possible. 
 
 - *Threat ID*: 30.
     - Threat Name: Data Flow User Input Is Potentially Interrupted
     - Threat Category: Denial Of Service
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification: Keycloak can not guarantee uninterrupted data flow to web applications
+    - Existing Mitigations: None
+    - Notable Gap: Keycloak can not guarantee uninterrupted data flow to web applications
 
 - *Threat ID*: 31.
     - Threat Name: External Entity Web Application Potentially Denies Receiving Data
     - Threat Category: Repudiation
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification: Keycloak audits all actions
+    - Existing Mitigations: Auditing is a critical part of Keycloak's architecture
+    - Notable Gap: None
 
 - *Threat ID*: 32.
     - Threat Name: Spoofing of the Web Application External Destination Entity
     - Threat Category: Spoofing
-    - Justification:
-    - Existing Mitigations:
+    - Justification: Keycloak is configurable for SSL/HTTPS
+    - Existing Mitigations: The SSL trust manager ensures the web application's identity is valid and ensures the DNS domain name gainst the server's certificate
     - Notable Gap:
 
 - *Threat ID*: 33.
     - Threat Name: Spoofing the Web Application External Entity
     - Threat Category: Spoofing
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification: Not applicable - Web Applications do not have permissions exploit in Keycloak
+    - Existing Mitigations: Users have permissions to access web applications.
+    - Notable Gap: None 
+  
 - *Threat ID*: 34.
     - Threat Name: Elevation Using Impersonation
     - Threat Category: Elevation Of Privilege
-    - Justification:
-    - Existing Mitigations:
+    - Justification: Not applicable - Keycloak's sole purpose is user authentication and authorization
+    - Existing Mitigations: Only an administrator can grant privileges. Privilege extends from user to application.
     - Notable Gap:
 
 - *Threat ID*: 35.
     - Threat Name: Spoofing the Keycloak Process
     - Threat Category: Spoofing
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification: Keycloak application connections are secured by protocols
+    - Existing Mitigations: Keycloak connects to client applications using a choice of either OpenID Connect or SAML protocols.
+    - Notable Gap: None
 
 - *Threat ID*: 36.
     - Threat Name: Potential Lack of Input Validation for Keycloak
     - Threat Category: Tampering
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification: Keycloak provides administrators with an option to add custom validators as needed
+    - Existing Mitigations:  Keycloak includes eight validators by default: Length, integer, double, uri, pattern, email. local-date, person name-prohibited-characters, username prohibited characters, and options
+    - Notable Gap: None
 
 <!--Start of Trenton's Threats -->
 - *Threat ID*: 37.
