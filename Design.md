@@ -268,71 +268,71 @@
 
 <!--Start of Trenton's Threats -->
 - *Threat ID*: 37.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name: Potential Data Repudiation by Keycloak
+    - Threat Category: 	Repudiation
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 38.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name: Data Flow Sniffing
+    - Threat Category: Information Disclosure
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 39.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name: Potential Process Crash or Stop for Keycloak
+    - Threat Category: 	Denial Of Service
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 40.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name: Data Flow Webapp Output Is Potentially Interrupted
+    - Threat Category: Denial Of Service
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 41.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name: Keycloak May be Subject to Elevation of Privilege Using Remote Code Execution
+    - Threat Category: Elevation Of Privilege
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 42.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name: Elevation by Changing the Execution Flow in Keycloak
+    - Threat Category: Elevation Of Privilege
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 -  *Threat ID*: 43.
-    -  Threat Name:
-    -  Threat Category: 
+    -  Threat Name: Cross Site Request Forgery
+    -  Threat Category: Elevation Of Privilege
     -  Justification:
     -  Existing Mitigations:
     -  Notable Gap:
 
 -  *Threat ID*: 44.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name: Spoofing of the User External Destination Entity
+    - Threat Category: Spoofing
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 -  *Threat ID*: 45.
-    -  Threat Name:
-    -  Threat Category: 
+    -  Threat Name: External Entity User Potentially Denies Receiving Data
+    -  Threat Category: Repudiation
     -  Justification:
     -  Existing Mitigations:
     -  Notable Gap:
 
 -  *Threat ID*: 46.
-    -  Threat Name:
-    -  Threat Category: 
+    -  Threat Name: Data Flow Webapp Output Data Is Potentially Interrupted
+    -  Threat Category: Denial Of Service
     -  Justification:
     -  Existing Mitigations:
     -  Notable Gap:
