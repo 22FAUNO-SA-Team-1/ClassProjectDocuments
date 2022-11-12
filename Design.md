@@ -185,7 +185,7 @@
 - *Threat ID*: 25.
     - Threat Name: Potential Process Crash or Stop for Keycloak
     - Threat Category: Denial Of Service
-    - Justification:
+    - Justification: 
     - Existing Mitigations:
     - Notable Gap:
 
@@ -205,11 +205,11 @@
 
 <!--Start of Zach's Threats -->
 - *Threat ID*: 28.
-    - Threat Name: Potential Lack of Input Validation for Keycloak
+    - Threat Name: Potential Lack of Input Validation for Keycloak (User to Keycloak)
     - Threat Category: Tampering
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification: Keycloak provides administrators with an option to add custom validators as needed
+    - Existing Mitigations: Keycloak includes eight validators by default: Length, integer, double, uri, pattern, email. local-date, person name-prohibited-characters, username prohibited characters, and options
+    - Notable Gap: None
 
 - *Threat ID*: 29.
     - Threat Name: Spoofing the Keycloak Process
