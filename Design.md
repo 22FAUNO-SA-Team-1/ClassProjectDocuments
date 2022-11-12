@@ -77,64 +77,64 @@
 
 <!--Start of John's Threats -->
 - *Threat ID*: 10.
-    - Threat Name:
-    - Threat Category: 
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Threat Name:  Keycloak May be Subject to Elevation of Privilege Using Remote Code Execution
+    - Threat Category:  Elevation Of Privilege
+    - Justification:  Remote Code Execution is a common attack vector so care must be taken when accepting input from remote systems.
+    - Existing Mitigations:  Keycloak features attribute validation when configuring user profiles within a realm.
+    - Notable Gap:  None
 
 - *Threat ID*: 11.
-    - Threat Name:
-    - Threat Category: 
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Threat Name:  Data Flow LDAP Authentication Response Is Potentially Interrupted
+    - Threat Category:  Denial Of Service
+    - Justification:  Keycloak cannot authenticate users if LDAP service is interrupted.
+	- Existing Mitigations:  None
+    - Notable Gap:  Difficult to mitigate.  Could be mitigated with a distributed network connection between Keycloak and LDAP server.
 
 - *Threat ID*: 12.
-    - Threat Name:
-    - Threat Category: 
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Threat Name:  Potential Process Crash or Stop for Keycloak
+    - Threat Category:  Denial Of Service
+    - Justification:  Application availability is critical for system use.
+    - Existing Mitigations:  Keycloak can be configured using clustering to improve performance and availability.
+    - Notable Gap:  None
 
 - *Threat ID*: 13.
-    - Threat Name:
-    - Threat Category: 
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Threat Name:  Data Flow Sniffing
+    - Threat Category:  Information Disclosure
+    - Justification:  Credential theft is a risk if transmitted in plaintext.
+    - Existing Mitigations:  Mitigated by using LDAPS protocol for encrypted data transmission.
+    - Notable Gap:  None
 
 - *Threat ID*: 14.
-    - Threat Name:
-    - Threat Category: 
-    - Justification:
-    - Existing Mitigations:
+    - Threat Name:  Potential Data Repudiation by Keycloak
+    - Threat Category:  Repudiation
+    - Justification:  
+    - Existing Mitigations:  
     - Notable Gap:
 
 - *Threat ID*: 15.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name:  Potential Lack of Input Validation for Keycloak
+    - Threat Category:  Tampering
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 16.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name:  Spoofing the Keycloak Process
+    - Threat Category:  Spoofing
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 17.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name:  Spoofing the LDAP Server External Entity
+    - Threat Category:  Spoofing
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 18.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name:  Elevation Using Impersonation
+    - Threat Category:  Elevation Of Privilege
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
@@ -143,9 +143,9 @@
 - *Threat ID*: 19.
     - Threat Name: Spoofing the User External Entity
     - Threat Category: Spoofing
-    - Justification: 
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification: Keycloak uses standard authroization
+    - Existing Mitigations: Keycloak utilizes standard authorization protocols to prevent spoofing
+    - Notable Gap: None
 
 - *Threat ID*: 20.
     - Threat Name: Elevation Using Impersonation
@@ -157,16 +157,16 @@
 - *Threat ID*: 21.
     - Threat Name: Cross Site Request Forgery
     - Threat Category: Elevation Of Privilege
-    - Justification: 
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification: Data parsing is utilized to prevent CSRF or XSRF
+    - Existing Mitigations: All input data is sanitized before being processed
+    - Notable Gap: None
 
 - *Threat ID*: 22.
     - Threat Name: Elevation by Changing the Execution Flow in Keycloak
     - Threat Category: Elevation Of Privilege
-    - Justification: 
-    - Existing Mitigations: 
-    - Notable Gap:
+    - Justification: All data is sanitized
+    - Existing Mitigations: Keycloak sanitizes all data to ensure no execution flows can be altered
+    - Notable Gap: None
 
 - *Threat ID*: 23.
     - Threat Name: Keycloak May be Subject to Elevation of Privilege Using Remote Code Execution
@@ -192,8 +192,8 @@
 - *Threat ID*: 26.
     - Threat Name: Data Flow Sniffing
     - Threat Category: Information Disclosure
-    - Justification: 
-    - Existing Mitigations:
+    - Justification: Data flow is encrypted
+    - Existing Mitigations: Keycloak encrypts the data flow with standard encryption policies
     - Notable Gap:
 
 - *Threat ID*: 27.
