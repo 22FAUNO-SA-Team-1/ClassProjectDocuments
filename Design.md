@@ -77,64 +77,64 @@
 
 <!--Start of John's Threats -->
 - *Threat ID*: 10.
-    - Threat Name:
-    - Threat Category: 
-    - Justification:
+    - Threat Name:  Keycloak May be Subject to Elevation of Privilege Using Remote Code Execution
+    - Threat Category:  Elevation Of Privilege
+    - Justification:  
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 11.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name:  Data Flow LDAP Authentication Response Is Potentially Interrupted
+    - Threat Category:  Denial Of Service
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 12.
-    - Threat Name:
-    - Threat Category: 
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Threat Name:  Potential Process Crash or Stop for Keycloak
+    - Threat Category:  Denial Of Service
+    - Justification:  Availability is critical for any application
+    - Existing Mitigations:  Keycloak can be configured using clustering to improve performance and availability.
+    - Notable Gap:  None
 
 - *Threat ID*: 13.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name:  Data Flow Sniffing
+    - Threat Category:  Information Disclosure
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 14.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name:  Potential Data Repudiation by Keycloak
+    - Threat Category:  Repudiation
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 15.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name:  Potential Lack of Input Validation for Keycloak
+    - Threat Category:  Tampering
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 16.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name:  Spoofing the Keycloak Process
+    - Threat Category:  Spoofing
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 17.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name:  Spoofing the LDAP Server External Entity
+    - Threat Category:  Spoofing
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
 
 - *Threat ID*: 18.
-    - Threat Name:
-    - Threat Category: 
+    - Threat Name:  Elevation Using Impersonation
+    - Threat Category:  Elevation Of Privilege
     - Justification:
     - Existing Mitigations:
     - Notable Gap:
