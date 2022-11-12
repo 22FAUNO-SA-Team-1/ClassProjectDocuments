@@ -143,9 +143,9 @@
 - *Threat ID*: 19.
     - Threat Name: Spoofing the User External Entity
     - Threat Category: Spoofing
-    - Justification: 
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification: Keycloak uses standard authroization
+    - Existing Mitigations: Keycloak utilizes standard authorization protocols to prevent spoofing
+    - Notable Gap: None
 
 - *Threat ID*: 20.
     - Threat Name: Elevation Using Impersonation
@@ -157,16 +157,16 @@
 - *Threat ID*: 21.
     - Threat Name: Cross Site Request Forgery
     - Threat Category: Elevation Of Privilege
-    - Justification: 
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification: Data parsing is utilized to prevent CSRF or XSRF
+    - Existing Mitigations: All input data is sanitized before being processed
+    - Notable Gap: None
 
 - *Threat ID*: 22.
     - Threat Name: Elevation by Changing the Execution Flow in Keycloak
     - Threat Category: Elevation Of Privilege
-    - Justification: 
-    - Existing Mitigations: 
-    - Notable Gap:
+    - Justification: All data is sanitized
+    - Existing Mitigations: Keycloak sanitizes all data to ensure no execution flows can be altered
+    - Notable Gap: None
 
 - *Threat ID*: 23.
     - Threat Name: Keycloak May be Subject to Elevation of Privilege Using Remote Code Execution
@@ -192,8 +192,8 @@
 - *Threat ID*: 26.
     - Threat Name: Data Flow Sniffing
     - Threat Category: Information Disclosure
-    - Justification: 
-    - Existing Mitigations:
+    - Justification: Data flow is encrypted
+    - Existing Mitigations: Keycloak encrypts the data flow with standard encryption policies
     - Notable Gap:
 
 - *Threat ID*: 27.
