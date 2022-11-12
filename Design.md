@@ -79,36 +79,36 @@
 - *Threat ID*: 10.
     - Threat Name:  Keycloak May be Subject to Elevation of Privilege Using Remote Code Execution
     - Threat Category:  Elevation Of Privilege
-    - Justification:  
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification:  Remote Code Execution is a common attack vector so care must be taken when accepting input from remote systems.
+    - Existing Mitigations:  Keycloak features attribute validation when configuring user profiles within a realm.
+    - Notable Gap:  None
 
 - *Threat ID*: 11.
     - Threat Name:  Data Flow LDAP Authentication Response Is Potentially Interrupted
     - Threat Category:  Denial Of Service
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification:  Keycloak cannot authenticate users if LDAP service is interrupted.
+	- Existing Mitigations:  None
+    - Notable Gap:  Difficult to mitigate.  Could be mitigated with a distributed network connection between Keycloak and LDAP server.
 
 - *Threat ID*: 12.
     - Threat Name:  Potential Process Crash or Stop for Keycloak
     - Threat Category:  Denial Of Service
-    - Justification:  Availability is critical for any application
+    - Justification:  Application availability is critical for system use.
     - Existing Mitigations:  Keycloak can be configured using clustering to improve performance and availability.
     - Notable Gap:  None
 
 - *Threat ID*: 13.
     - Threat Name:  Data Flow Sniffing
     - Threat Category:  Information Disclosure
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification:  Credential theft is a risk if transmitted in plaintext.
+    - Existing Mitigations:  Mitigated by using LDAPS protocol for encrypted data transmission.
+    - Notable Gap:  None
 
 - *Threat ID*: 14.
     - Threat Name:  Potential Data Repudiation by Keycloak
     - Threat Category:  Repudiation
-    - Justification:
-    - Existing Mitigations:
+    - Justification:  
+    - Existing Mitigations:  
     - Notable Gap:
 
 - *Threat ID*: 15.
