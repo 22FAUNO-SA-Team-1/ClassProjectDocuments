@@ -152,9 +152,9 @@ The scenario we have based our data flow diagram on, and by extension generated 
 - *Threat ID*: 20.
     - Threat Name: Elevation Using Impersonation
     - Threat Category: Elevation Of Privilege
-    - Justification: 
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification: Impersonation can be used to gain access to higher elevation thus login function has to validate the person
+    - Existing Mitigations: Dual factor authentication can be utilized to mitigate the possiblity of impersonation
+    - Notable Gap: None
 
 - *Threat ID*: 21.
     - Threat Name: Cross Site Request Forgery
@@ -173,9 +173,9 @@ The scenario we have based our data flow diagram on, and by extension generated 
 - *Threat ID*: 23.
     - Threat Name: Keycloak May be Subject to Elevation of Privilege Using Remote Code Execution
     - Threat Category: Elevation Of Privilege
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification: Remote Code Execution is a common attack vector so care must be taken when accepting input from remote systems.
+    - Existing Mitigations: Keycloak features attribute validation when configuring user profiles within a realm.
+    - Notable Gap: None
 
 - *Threat ID*: 24.
     - Threat Name: Data Flow User Input Is Potentially Interrupted
@@ -183,6 +183,7 @@ The scenario we have based our data flow diagram on, and by extension generated 
     - Justification: Keycloak can not guarantee uninterrupted data flow to web applications
     - Existing Mitigations: None
     - Notable Gap: Keycloak can not guarantee uninterrupted data flow to web applications
+  
 - *Threat ID*: 25.
     - Threat Name: Potential Process Crash or Stop for Keycloak
     - Threat Category: Denial Of Service
@@ -195,7 +196,7 @@ The scenario we have based our data flow diagram on, and by extension generated 
     - Threat Category: Information Disclosure
     - Justification: Data flow is encrypted
     - Existing Mitigations: Keycloak encrypts the User Input data flow with standard encryption policies
-    - Notable Gap:
+    - Notable Gap: None
 
 - *Threat ID*: 27.
     - Threat Name: Potential Data Repudiation by Keycloak
@@ -243,16 +244,16 @@ The scenario we have based our data flow diagram on, and by extension generated 
 - *Threat ID*: 33.
     - Threat Name: Spoofing the Web Application External Entity
     - Threat Category: Spoofing
-    - Justification: Not applicable - Web Applications do not have permissions exploit in Keycloak
+    - Justification: Not applicable - Web Applications do not have permissions to exploit in Keycloak
     - Existing Mitigations: Users have permissions to access web applications.
     - Notable Gap: None 
   
 - *Threat ID*: 34.
     - Threat Name: Elevation Using Impersonation
     - Threat Category: Elevation Of Privilege
-    - Justification: Not applicable - Keycloak's sole purpose is user authentication and authorization
+    - Justification: Not applicable - Keycloak's purpose is user authentication and authorization
     - Existing Mitigations: Only an administrator can grant privileges. Privilege extends from user to application.
-    - Notable Gap: Not Applicable
+    - Notable Gap: None
 
 - *Threat ID*: 35.
     - Threat Name: Spoofing the Keycloak Process
