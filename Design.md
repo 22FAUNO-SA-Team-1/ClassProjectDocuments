@@ -17,14 +17,14 @@ The scenario we have based our data flow diagram on, and by extension generated 
 - *Threat ID*: 1.
     - Threat Name:  Potential Excessive Resource Consumption for Keycloak or Truststore
     - Threat Category:  Denial of Service
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification:  If Keycloak process or the Truststore data store get out of control with resource consumption, the machine (virtual or physical) where they run will be excessively bogged down
+    - Existing Mitigations:  Keycloak proper user role control and the ability to allow/deny certain data flows can prevent excessive resource consumption on the application to which Keycloak grants users access, there isn't anything that directly prevents the Keycloak server itself from excess resource consumption
+    - Notable Gap:  There have been some known issues with memory leaks Keycloak servers in the past and its unsure whether these have been addressed at this point or not
 
 - *Threat ID*: 2.
     - Threat Name:  Spoofing of Destination Data Store Truststore
     - Threat Category:  Spoofing
-    - Justification:
+    - Justification:  Not applicable in our scenario as the truststore data store is an internal data store running on the keycloak server and an external actor wouldn't have access 
     - Existing Mitigations:
     - Notable Gap:
 
@@ -38,9 +38,9 @@ The scenario we have based our data flow diagram on, and by extension generated 
 - *Threat ID*: 4.
     - Threat Name:  Weak Access Control for a Resource
     - Threat Category:  Information Disclosure
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification:  If access to resources isn't properly controlled, an attacker can access/read/manipulate resources
+    - Existing Mitigations:  Keycloak doesn't facilitate users accessing truststores data stores.  To be provided any control over the truststore and data flowing to/from it, a user must be authenticated to a master or administrator realm on the Keycloak server itself.  Non administrative role users have authentication requests handled directly by the Keycloak process itself.
+    - Notable Gap: None
 
 - *Threat ID*: 5.
     - Threat Name:  Data Flow LDAP Authentication Request Is Potentially Interrupted
@@ -52,16 +52,16 @@ The scenario we have based our data flow diagram on, and by extension generated 
 - *Threat ID*: 6.
     - Threat Name:  External Entity LDAP Server Potentially Denies Receiving Data
     - Threat Category:  Repudiation
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification:  If LDAP server denies receiving authentication data then a user would fail authentication even when they are a valid user
+    - Existing Mitigations:  Keycloak allows logging of events like denied data transmission with relevant data such as time/date of the event and summary of the data that failed or was denied to flow.
+    - Notable Gap:  Logging is the only answer Keycloak has to this threat, it doesn't directly address the issue when it occurs but it does allow fixing the issue after the fact as needed.
 
 - *Threat ID*: 7.
     - Threat Name:  Spoofing of the LDAP Server External Destination Entity
     - Threat Category:  Spoofing
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification:  An attacker could spoof an LDAP server and hijack data or requests meant to be sent to the LDAP server
+    - Existing Mitigations:  Spoofing the LDAP Server is prevented by authentication via the truststore.  A truststore for trusted LDAP entities is stored on the Keycloak server and ensuring the LDAP server is authentic is required before authentication requests are sent to an LDAP server.
+    - Notable Gap: None
 
 - *Threat ID*: 8.
     - Threat Name:  Cross Site Request Forgery
