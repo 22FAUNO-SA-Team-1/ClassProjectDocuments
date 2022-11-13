@@ -183,6 +183,7 @@ The scenario we have based our data flow diagram on, and by extension generated 
     - Justification: Keycloak can not guarantee uninterrupted data flow to web applications
     - Existing Mitigations: None
     - Notable Gap: Keycloak can not guarantee uninterrupted data flow to web applications
+  
 - *Threat ID*: 25.
     - Threat Name: Potential Process Crash or Stop for Keycloak
     - Threat Category: Denial Of Service
@@ -243,16 +244,16 @@ The scenario we have based our data flow diagram on, and by extension generated 
 - *Threat ID*: 33.
     - Threat Name: Spoofing the Web Application External Entity
     - Threat Category: Spoofing
-    - Justification: Not applicable - Web Applications do not have permissions exploit in Keycloak
+    - Justification: Not applicable - Web Applications do not have permissions to exploit in Keycloak
     - Existing Mitigations: Users have permissions to access web applications.
     - Notable Gap: None 
   
 - *Threat ID*: 34.
     - Threat Name: Elevation Using Impersonation
     - Threat Category: Elevation Of Privilege
-    - Justification: Not applicable - Keycloak's sole purpose is user authentication and authorization
+    - Justification: Not applicable - Keycloak's purpose is user authentication and authorization
     - Existing Mitigations: Only an administrator can grant privileges. Privilege extends from user to application.
-    - Notable Gap: Not Applicable
+    - Notable Gap: None
 
 - *Threat ID*: 35.
     - Threat Name: Spoofing the Keycloak Process
