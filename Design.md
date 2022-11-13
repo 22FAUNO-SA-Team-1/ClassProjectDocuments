@@ -237,7 +237,7 @@ The scenario we have based our data flow diagram on, and by extension generated 
     - Threat Name: Spoofing of the Web Application External Destination Entity
     - Threat Category: Spoofing
     - Justification: Keycloak is configurable for SSL/HTTPS
-    - Existing Mitigations: The SSL trust manager ensures the web application's identity is valid and ensures the DNS domain name gainst the server's certificate
+    - Existing Mitigations: The SSL trust manager ensures the web application's identity is valid and ensures the DNS domain name against the server's certificate
     - Notable Gap: None
 
 - *Threat ID*: 33.
