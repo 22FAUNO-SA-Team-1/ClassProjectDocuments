@@ -210,7 +210,7 @@ The scenario we have based our data flow diagram on, and by extension generated 
     - Threat Name: Potential Lack of Input Validation for Keycloak (User to Keycloak)
     - Threat Category: Tampering
     - Justification: Keycloak provides administrators with an option to add custom validators as needed
-    - Existing Mitigations: Keycloak includes eight validators by default: Length, integer, double, uri, pattern, email. local-date, person name-prohibited-characters, username prohibited characters, and options
+    - Existing Mitigations: Keycloak includes eight validators by default: Length, integer, double, URI, pattern, email. local-date, person name-prohibited-characters, username prohibited characters, and options
     - Notable Gap: None
 
 - *Threat ID*: 29.
@@ -218,7 +218,7 @@ The scenario we have based our data flow diagram on, and by extension generated 
     - Threat Category: Spoofing
     - Justification: Keycloak allows Open Redirects
     - Existing Mitigations: Written configuration recommendation
-    - Notable Gap: If an administrator does not make a redirect uri sufficiently specific, or if a user is already authenticated and redirect uris have not been configured, spoofing Keycloak is possible. 
+    - Notable Gap: If an administrator does not make a redirect URI sufficiently specific, or if a user is already authenticated and redirect URIs have not been configured, spoofing Keycloak is possible. 
 
 - *Threat ID*: 30.
     - Threat Name: Data Flow User Input Is Potentially Interrupted
@@ -266,7 +266,7 @@ The scenario we have based our data flow diagram on, and by extension generated 
     - Threat Name: Potential Lack of Input Validation for Keycloak
     - Threat Category: Tampering
     - Justification: Keycloak provides administrators with an option to add custom validators as needed
-    - Existing Mitigations:  Keycloak includes eight validators by default: Length, integer, double, uri, pattern, email. local-date, person name-prohibited-characters, username prohibited characters, and options
+    - Existing Mitigations:  Keycloak includes eight validators by default: Length, integer, double, URI, pattern, email. local-date, person name-prohibited-characters, username prohibited characters, and options
     - Notable Gap: None
 
 <!--Start of Trenton's Threats -->
