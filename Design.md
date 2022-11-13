@@ -9,7 +9,7 @@
 
 ### 2. Introduction
 
-The scenario we have based our data flow diagram on, and by extension generated and addressed the various threats existing in said scenario, revolves around what we believe is the primary purpose and most common use of Keycloak, namely authenticating a valid user and providing secure access to an application.  In this scenario an external interactor representing a user wishing to access protected assets provided by a web application must be properly authenticated by Keycloak before gaining said access.  This user will be prompted by Keycloak to enter their credentials as a data flow source into the Keycloak process.  Keycloak will then, based on the Keycloak server settings, determine how that user should be authenticated, and will send an authentication request to the internal truststore data source, or in the case where the application relies on an external LDAP server for authentication, that authentication request is sent out to an external interactor representing the LDAP server as that server is outside the controle of the Keycloak codebase.  In the case of the internal truststore, the truststore data source sends back the required data for the Keycloak process to make an authentication decision, whereas when using the LDAP server, the external interactor LDAP server sends the authentication response back to the Keycloak process.  If the external interactor user is authenticated properly, their input data will then be forwarded to the web application external interactor and any UI or otherwise requested data while using the application will be sent back to the user through the Keycloak process.  Threat boundaries exist between the Keycloak Process and any external interactor where the codebase does not have direct control.
+The scenario we have based our data flow diagram on, and by extension generated and addressed the various threats existing in said scenario, revolves around what we believe is the primary purpose and most common use of Keycloak, namely authenticating a valid user and providing secure access to an application.  In this scenario an external interactor representing a user wishing to access protected assets provided by a web application must be properly authenticated by Keycloak before gaining said access.  This user will be prompted by Keycloak to enter their credentials as a data flow source into the Keycloak process.  Keycloak will then, based on the Keycloak server settings, determine how that user should be authenticated, and will send an authentication request to the internal truststore data source, or in the case where the application relies on an external LDAP server for authentication, that authentication request is sent out to an external interactor representing the LDAP server as that server is outside the control of the Keycloak codebase.  In the case of the internal truststore, the truststore data source sends back the required data for the Keycloak process to make an authentication decision, whereas when using the LDAP server, the external interactor LDAP server sends the authentication response back to the Keycloak process.  If the external interactor user is authenticated properly, their input data will then be forwarded to the web application external interactor and any UI or otherwise requested data while using the application will be sent back to the user through the Keycloak process.  Threat boundaries exist between the Keycloak Process and any external interactor where the codebase does not have direct control.
 
 
 ### 3. Individual Threat Review
@@ -117,7 +117,7 @@ The scenario we have based our data flow diagram on, and by extension generated 
     - Threat Name:  Potential Lack of Input Validation for Keycloak
     - Threat Category:  Tampering
     - Justification:  Data integrity is crucial for trusted operation.
-    - Existing Mitigations:  Mitigated using Input Validation or Sanitization, similiar to threat ID 10.
+    - Existing Mitigations:  Mitigated using Input Validation or Sanitization, similar to threat ID 10.
     - Notable Gap:  None
 
 - *Threat ID*: 16.
@@ -153,7 +153,7 @@ The scenario we have based our data flow diagram on, and by extension generated 
     - Threat Name: Elevation Using Impersonation
     - Threat Category: Elevation Of Privilege
     - Justification: Impersonation can be used to gain access to higher elevation thus login function has to validate the person
-    - Existing Mitigations: Dual factor authentication can be utilized to mitigate the possiblity of impersonation
+    - Existing Mitigations: Dual factor authentication can be utilized to mitigate the possibility of impersonation
     - Notable Gap: None
 
 - *Threat ID*: 21.
