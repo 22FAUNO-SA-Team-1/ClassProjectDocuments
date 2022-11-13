@@ -244,8 +244,8 @@ The scenario we have based our data flow diagram on, and by extension generated 
 - *Threat ID*: 33.
     - Threat Name: Spoofing the Web Application External Entity
     - Threat Category: Spoofing
-    - Justification: Web Applications do not have permissions available to exploit in Keycloak
-    - Existing Mitigations: Not Applicable
+    - Justification: Not Applicable-Web Applications do not have permissions available to exploit in Keycloak
+    - Existing Mitigations: None
     - Notable Gap: None 
   
 - *Threat ID*: 34.
@@ -322,9 +322,9 @@ The scenario we have based our data flow diagram on, and by extension generated 
 -  *Threat ID*: 44.
     - Threat Name: Spoofing of the User External Destination Entity
     - Threat Category: Spoofing
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification: Not Applicable - Keycloak does not tie an IP/Mac Address that could be spoofed
+    - Existing Mitigations: None
+    - Notable Gap: None
 
 -  *Threat ID*: 45.
     -  Threat Name: External Entity User Potentially Denies Receiving Data
