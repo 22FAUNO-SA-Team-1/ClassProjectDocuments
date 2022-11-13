@@ -117,7 +117,7 @@ The scenario we have based our data flow diagram on, and by extension generated 
     - Threat Name:  Potential Lack of Input Validation for Keycloak
     - Threat Category:  Tampering
     - Justification:  Data integrity is crucial for trusted operation.
-    - Existing Mitigations:  Mitigated using Input Validation or Sanitization, similar to threat ID 10.
+    - Existing Mitigations:  Mitigated using Input Validation or Sanitization, similar to Threat ID 10.
     - Notable Gap:  None
 
 - *Threat ID*: 16.
@@ -131,7 +131,7 @@ The scenario we have based our data flow diagram on, and by extension generated 
     - Threat Name:  Spoofing the LDAP Server External Entity
     - Threat Category:  Spoofing
     - Justification:  LDAP Server may be spoofed by an attacker and this may lead to unauthorized access to Keycloak.
-    - Existing Mitigations:  Mitigated via Keycloak trust store which uses certificate-based authentication, similar to threat ID 16.
+    - Existing Mitigations:  Mitigated via Keycloak trust store which uses certificate-based authentication, similar to Threat ID 16.
     - Notable Gap:  None
 
 - *Threat ID*: 18.
