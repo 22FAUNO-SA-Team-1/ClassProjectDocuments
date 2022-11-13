@@ -9,6 +9,8 @@
 
 ### 2. Introduction
 
+The scenario we have based our data flow diagram on, and by extension generated and addressed the various threats existing in said scenario, revolves around what we believe is the primary purpose and most common use of Keycloak, namely authenticating a valid user and providing secure access to an application.  In this scenario an external interactor representing a user wishing to access protected assets provided by a web application must be properly authenticated by Keycloak before gaining said access.  This user will be prompted by Keycloak to enter their credentials as a data flow source into the Keycloak process.  Keycloak will then, based on the Keycloak server settings, determine how that user should be authenticated, and will send an authentication request to the internal truststore data source, or in the case where the application relies on an external LDAP server for authentication, that authntication request is sent out to an external interactor representing the LDAP server as that server is outside the controle of the Keycloak codebase
+
 
 ### 3. Individual Threat Review
 <!--Start of Chris' Threats -->
