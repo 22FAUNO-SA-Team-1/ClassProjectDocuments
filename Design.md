@@ -299,7 +299,7 @@
     - Threat Name: Keycloak May be Subject to Elevation of Privilege Using Remote Code Execution
     - Threat Category: Elevation Of Privilege
    - Justification:  Remote Code Execution is a common attack vector so care must be taken when accepting input from remote systems.
-    - Existing Mitigations:  Keycloak features attribute validation when configuring user profiles within a realm.
+    - Existing Mitigations:  Keycloak features attribute validation
     - Notable Gap:  None
 
 - *Threat ID*: 42.
