@@ -244,15 +244,15 @@ The scenario we have based our data flow diagram on, and by extension generated 
 - *Threat ID*: 33.
     - Threat Name: Spoofing the Web Application External Entity
     - Threat Category: Spoofing
-    - Justification: Not applicable - Web Applications do not have permissions to exploit in Keycloak
-    - Existing Mitigations: Users have permissions to access web applications.
+    - Justification: Web Applications do not have permissions available to exploit in Keycloak
+    - Existing Mitigations: Not Applicable
     - Notable Gap: None 
   
 - *Threat ID*: 34.
     - Threat Name: Elevation Using Impersonation
     - Threat Category: Elevation Of Privilege
-    - Justification: Not applicable - Keycloak's purpose is user authentication and authorization
-    - Existing Mitigations: Only an administrator can grant privileges. Privilege extends from user to application.
+    - Justification: Keycloak's purpose is user authentication and authorization
+    - Existing Mitigations: Only an administrator can grant privileges. Privileges extend from user to application.
     - Notable Gap: None
 
 - *Threat ID*: 35.
@@ -344,7 +344,7 @@ The scenario we have based our data flow diagram on, and by extension generated 
 
 ### 4.1 Notable Gaps:
 
-There are multiple notable gaps within this DFD scenario. The first of the notable gaps includes uninterrupted data flows. Since Keycloak is a software to help with user authentication, it cannot guarantee any uninterrupted data flows between the webapplication and itself. This is partially because Keycloak cannot mitigate threats that exist for the external web app. This also goes hand in hand with another notable gap of encrypted data coming from the web application. Keycloak cannot control what type of data the external web application sends or accepts, thus mitigation of this gap is hard. Finally, the notable gap that keycloak could work on is a spoofing threat. Users could possible spoof keycloak by redirecting the URI. Keycloak does have configurations that can mitigate this problem, but it is reliant on the set-up of keycloak.
+There are multiple notable gaps within this DFD scenario. The first of the notable gaps includes uninterrupted data flows. Since Keycloak is a software to help with user authentication, it cannot guarantee any uninterrupted data flows between the web application and itself. This is partially because Keycloak cannot mitigate threats that exist for the external web app. This also goes hand in hand with another notable gap of encrypted data coming from the web application. Keycloak cannot control what type of data the external web application sends or accepts, thus mitigation of this gap is hard. Finally, the notable gap that keycloak could work on is a spoofing threat. Users could possible spoof keycloak by redirecting the URI. Keycloak does have configurations that can mitigate this problem, but it is reliant on the set-up of keycloak.
 
 ### 5. Reflection
 
