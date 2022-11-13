@@ -43,9 +43,9 @@
 - *Threat ID*: 5.
     - Threat Name:  Data Flow LDAP Authentication Request Is Potentially Interrupted
     - Threat Category:  Denial of Service
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+     - Justification:  Keycloak cannot authenticate users if LDAP service is interrupted.
+	- Existing Mitigations:  None
+    - Notable Gap:  Difficult to mitigate.  Could be mitigated with a distributed network connection between Keycloak and LDAP server.
 
 - *Threat ID*: 6.
     - Threat Name:  External Entity LDAP Server Potentially Denies Receiving Data
@@ -64,16 +64,16 @@
 - *Threat ID*: 8.
     - Threat Name:  Cross Site Request Forgery
     - Threat Category:  Elevation of Privilege
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification: Data parsing is utilized to prevent CSRF or XSRF
+    - Existing Mitigations: All input data is sanitized before being processed
+    - Notable Gap: None
 
 - *Threat ID*: 9.
     - Threat Name:  Elevation by Changing the Execution Flow in Keycloak
     - Threat Category:  Elevation of Privilege
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification: All data is sanitized
+    - Existing Mitigations: Keycloak sanitizes all data to ensure no execution flows can be altered
+    - Notable Gap: None
 
 <!--Start of John's Threats -->
 - *Threat ID*: 10.
@@ -178,22 +178,21 @@
 - *Threat ID*: 24.
     - Threat Name: Data Flow User Input Is Potentially Interrupted
     - Threat Category: Denial Of Service
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
-
+    - Justification: Keycloak can not guarantee uninterrupted data flow to web applications
+    - Existing Mitigations: None
+    - Notable Gap: Keycloak can not guarantee uninterrupted data flow to web applications
 - *Threat ID*: 25.
     - Threat Name: Potential Process Crash or Stop for Keycloak
     - Threat Category: Denial Of Service
-    - Justification: 
-    - Existing Mitigations:
-    - Notable Gap:
+     - Justification:  Application availability is critical for system use.
+    - Existing Mitigations:  Keycloak can be configured using clustering to improve performance and availability.
+    - Notable Gap:  None
 
 - *Threat ID*: 26.
     - Threat Name: Data Flow Sniffing
     - Threat Category: Information Disclosure
     - Justification: Data flow is encrypted
-    - Existing Mitigations: Keycloak encrypts the data flow with standard encryption policies
+    - Existing Mitigations: Keycloak encrypts the User Input data flow with standard encryption policies
     - Notable Gap:
 
 - *Threat ID*: 27.
@@ -237,7 +236,7 @@
     - Threat Category: Spoofing
     - Justification: Keycloak is configurable for SSL/HTTPS
     - Existing Mitigations: The SSL trust manager ensures the web application's identity is valid and ensures the DNS domain name gainst the server's certificate
-    - Notable Gap:
+    - Notable Gap: None
 
 - *Threat ID*: 33.
     - Threat Name: Spoofing the Web Application External Entity
@@ -251,7 +250,7 @@
     - Threat Category: Elevation Of Privilege
     - Justification: Not applicable - Keycloak's sole purpose is user authentication and authorization
     - Existing Mitigations: Only an administrator can grant privileges. Privilege extends from user to application.
-    - Notable Gap:
+    - Notable Gap: Not Applicable
 
 - *Threat ID*: 35.
     - Threat Name: Spoofing the Keycloak Process
@@ -271,51 +270,51 @@
 - *Threat ID*: 37.
     - Threat Name: Potential Data Repudiation by Keycloak
     - Threat Category: 	Repudiation
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification: Keycloak audits all actions
+    - Existing Mitigations: Auditing is a critical part of Keycloak's architecture
+    - Notable Gap: None
 
 - *Threat ID*: 38.
     - Threat Name: Data Flow Sniffing
     - Threat Category: Information Disclosure
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification: Keycloak can not guarantee encrypted Data from web applications
+    - Existing Mitigations: None
+    - Notable Gap: Keycloak can not guarantee encrypted Data from web applications
 
 - *Threat ID*: 39.
     - Threat Name: Potential Process Crash or Stop for Keycloak
     - Threat Category: 	Denial Of Service
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification:  Application availability is critical for system use.
+    - Existing Mitigations:  Keycloak can be configured using clustering to improve performance and availability.
+    - Notable Gap:  None
 
 - *Threat ID*: 40.
     - Threat Name: Data Flow Webapp Output Is Potentially Interrupted
     - Threat Category: Denial Of Service
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification: Keycloak can not guarantee uninterrupted data flow from web applications
+    - Existing Mitigations: None
+    - Notable Gap: Keycloak can not guarantee uninterrupted data flow from web applications
 
 - *Threat ID*: 41.
     - Threat Name: Keycloak May be Subject to Elevation of Privilege Using Remote Code Execution
     - Threat Category: Elevation Of Privilege
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+   - Justification:  Remote Code Execution is a common attack vector so care must be taken when accepting input from remote systems.
+    - Existing Mitigations:  Keycloak features attribute validation when configuring user profiles within a realm.
+    - Notable Gap:  None
 
 - *Threat ID*: 42.
     - Threat Name: Elevation by Changing the Execution Flow in Keycloak
     - Threat Category: Elevation Of Privilege
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification: All data is sanitized
+    - Existing Mitigations: Keycloak sanitizes all data to ensure no execution flows can be altered
+    - Notable Gap: None
 
 -  *Threat ID*: 43.
     -  Threat Name: Cross Site Request Forgery
     -  Threat Category: Elevation Of Privilege
-    -  Justification:
-    -  Existing Mitigations:
-    -  Notable Gap:
+    - Justification: Data parsing is utilized to prevent CSRF or XSRF
+    - Existing Mitigations: All input data is sanitized before being processed
+    - Notable Gap: None
 
 -  *Threat ID*: 44.
     - Threat Name: Spoofing of the User External Destination Entity
@@ -327,16 +326,16 @@
 -  *Threat ID*: 45.
     -  Threat Name: External Entity User Potentially Denies Receiving Data
     -  Threat Category: Repudiation
-    -  Justification:
-    -  Existing Mitigations:
-    -  Notable Gap:
+    - Justification: Keycloak audits all actions
+    - Existing Mitigations: Auditing is a critical part of Keycloak's architecture
+    - Notable Gap: None
 
 -  *Threat ID*: 46.
     -  Threat Name: Data Flow Webapp Output Data Is Potentially Interrupted
     -  Threat Category: Denial Of Service
-    -  Justification:
-    -  Existing Mitigations:
-    -  Notable Gap:
+    - Justification: Keycloak can not guarantee uninterrupted data flow from web applications
+    - Existing Mitigations: None
+    - Notable Gap: Keycloak can not guarantee uninterrupted data flow from web applications
 
 ### 4. Design Observations Summary
 
