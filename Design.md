@@ -109,37 +109,37 @@ The scenario we have based our data flow diagram on, and by extension generated 
 - *Threat ID*: 14.
     - Threat Name:  Potential Data Repudiation by Keycloak
     - Threat Category:  Repudiation
-    - Justification:  
-    - Existing Mitigations:  
-    - Notable Gap:
+    - Justification:  Keycloak claims that it did not receive data from a source outside the trust boundary. Consider using logging or auditing to record the source, time, and summary of the received data.
+    - Existing Mitigations:  Keycloak allows for multiple levels of system logging.
+    - Notable Gap:  None
 
 - *Threat ID*: 15.
     - Threat Name:  Potential Lack of Input Validation for Keycloak
     - Threat Category:  Tampering
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification:  Data integrity is crucial for trusted operation.
+    - Existing Mitigations:  Mitigated using Input Validation or Sanitization, similiar to threat ID 10.
+    - Notable Gap:  None
 
 - *Threat ID*: 16.
     - Threat Name:  Spoofing the Keycloak Process
     - Threat Category:  Spoofing
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification:  Keycloak may be spoofed by an attacker and this may lead to information disclosure by LDAP Server.
+    - Existing Mitigations:  Mitigated via Keycloak truststore which uses certificate-based authentication.
+    - Notable Gap:  None
 
 - *Threat ID*: 17.
     - Threat Name:  Spoofing the LDAP Server External Entity
     - Threat Category:  Spoofing
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification:  LDAP Server may be spoofed by an attacker and this may lead to unauthorized access to Keycloak.
+    - Existing Mitigations:  Mitigated via Keycloak trust store which uses certificate-based authentication, similar to threat ID 16.
+    - Notable Gap:  None
 
 - *Threat ID*: 18.
     - Threat Name:  Elevation Using Impersonation
     - Threat Category:  Elevation Of Privilege
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification:  Keycloak may be able to impersonate the context of LDAP Server in order to gain additional privilege.
+    - Existing Mitigations:  Configure Keycloak with read-only LDAP integration.
+    - Notable Gap:  None
 
 <!--Start of Ethen's Threats -->
 - *Threat ID*: 19.
