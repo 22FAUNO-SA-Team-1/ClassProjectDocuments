@@ -24,16 +24,16 @@ The scenario we have based our data flow diagram on, and by extension generated 
 - *Threat ID*: 2.
     - Threat Name:  Spoofing of Destination Data Store Truststore
     - Threat Category:  Spoofing
-    - Justification:  Not applicable in our scenario as the truststore data store is an internal data store running on the keycloak server and an external actor wouldn't have access 
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification:  Not applicable in our scenario as the truststore data store is an internal data store running on the keycloak server and an external actor wouldn't have access without gaining access to the master realm or gaining administrator authentication credentials.
+    - Existing Mitigations:  Requiring authenticated master or administrative realm access prevents external access from the truststore
+    - Notable Gap:  None
 
 - *Threat ID*: 3.
     - Threat Name:  Spoofing of Source Data Store Truststore
     - Threat Category:  Spoofing
-    - Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification:  Not applicable in our scenario as the truststore data store is an internal data store running on the keycloak server and an external actor wouldn't have access without gaining access to the master realm or gaining administrator authentication credentials.
+    - Existing Mitigations:  Requiring authenticated master or administrative realm access prevents external access from the truststore
+    - Notable Gap:  None
 
 - *Threat ID*: 4.
     - Threat Name:  Weak Access Control for a Resource
