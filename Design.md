@@ -340,9 +340,7 @@ The scenario we have based our data flow diagram on, and by extension generated 
     - Existing Mitigations: None
     - Notable Gap: Keycloak can not guarantee uninterrupted data flow from web applications
 
-### 4. Design Observations Summary
-
-### 4.1 Notable Gaps:
+### 4. Notable Gaps:
 
 There are multiple notable gaps within this DFD scenario. The first of the notable gaps includes uninterrupted data flows. Since Keycloak is a software to help with user authentication, it cannot guarantee any uninterrupted data flows between the web application and itself. This is partially because Keycloak cannot mitigate threats that exist for the external web app. This also goes hand in hand with another notable gap of encrypted data coming from the web application. Keycloak cannot control what type of data the external web application sends or accepts, thus mitigation of this gap is hard. Finally, the notable gap that keycloak could work on is a spoofing threat. Users could possible spoof keycloak by redirecting the URI. Keycloak does have configurations that can mitigate this problem, but it is reliant on the set-up of keycloak.
 
