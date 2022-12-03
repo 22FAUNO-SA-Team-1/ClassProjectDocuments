@@ -17,6 +17,7 @@ Code Review Summary:<br/>
     Each entry for this CWE relies on a PATH variable which can result in information leakage if not santized.  Characters such as ".." or directory separaters "/" should not be allowed for entry.  Keycloak's data validation and sanitation techniques must be relied upon again to protect against weaknesses like these.
 
 
+
 #### [CWE-90](https://cwe.mitre.org/data/definitions/90.html): Improper Neutralization of Special Elements used in an LDAP Query ('LDAP Injection')
 
 Files Analyzed:<br/>
@@ -34,6 +35,38 @@ Files Analyzed:<br/>
 Automated Scan Issues: No related automated scan issues encountered.<br/>
 Code Review Summary:<br/>
 	This code is flagged twice within the DefaultClientSessionContext.java, and all instances are querying to determine user scope based on a user's role within a realm.  A custom data type of "ClientScopeModel" holds the entitlement after a series of get() commands where no direct user input is accepted.  As no direct user input is accepted, the risk is modification of user data within the Keycloak realm.
+
+
+    
+#### [CWE-601](https://cwe.mitre.org/data/definitions/601.html): URL Redirection to Untrusted Site ('Open Redirect')
+
+Files Analyzed:<br/>
+	[WelcomeResource.java](https://github.com/keycloak/keycloak/blob/main/services/src/main/java/org/keycloak/services/resources/WelcomeResource.java)<br/>
+    [RealmsResource.java](https://github.com/keycloak/keycloak/blob/main/services/src/main/java/org/keycloak/services/resources/RealmsResource.java)<br/>
+    [AbstractOAuth2IdentityProvider.java](https://github.com/keycloak/keycloak/blob/main/services/src/main/java/org/keycloak/broker/oidc/AbstractOAuth2IdentityProvider.java)<br/>
+    [QuarkusWelcomeResource.java](https://github.com/keycloak/keycloak/blob/main/quarkus/runtime/src/main/java/org/keycloak/quarkus/runtime/services/resources/QuarkusWelcomeResource.java)<br/>
+    [KeycloakAuthenticationSuccessHandler.java](https://github.com/keycloak/keycloak/blob/main/adapters/oidc/spring-security/src/main/java/org/keycloak/adapters/springsecurity/authentication/KeycloakAuthenticationSuccessHandler.java)<br/>
+    [KeycloakAuthenticationEntryPoint.java](https://github.com/keycloak/keycloak/blob/main/adapters/oidc/spring-security/src/main/java/org/keycloak/adapters/springsecurity/authentication/KeycloakAuthenticationEntryPoint.java)<br/>
+    
+Automated Scan Issues: No related automated scan issues encountered.<br/>
+Code Review Summary:<br/>
+	TODO
+
+
+
+#### [CWE-79](https://cwe.mitre.org/data/definitions/79.html): Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
+
+Files Analyzed:<br/>
+	[WelcomeResource.java](https://github.com/keycloak/keycloak/blob/main/services/src/main/java/org/keycloak/services/resources/WelcomeResource.java)<br/>
+    [ThemeResource.java](https://github.com/keycloak/keycloak/blob/main/services/src/main/java/org/keycloak/services/resources/ThemeResource.java)<br/>
+    [LocationActionsService.java](https://github.com/keycloak/keycloak/blob/main/services/src/main/java/org/keycloak/services/resources/LoginActionsService.java)<br/>
+    [SamlProtocol.java](https://github.com/keycloak/keycloak/blob/main/services/src/main/java/org/keycloak/protocol/saml/SamlProtocol.java)<br/>
+    [QuarkusWelcomeResource.java](https://github.com/keycloak/keycloak/blob/main/quarkus/runtime/src/main/java/org/keycloak/quarkus/runtime/services/resources/QuarkusWelcomeResource.java)<br/>
+    [SamlUtil.java](https://github.com/keycloak/keycloak/blob/main/adapters/saml/core/src/main/java/org/keycloak/adapters/saml/SamlUtil.java)<br/>
+    [AuthenticatedActionsHandler.java](https://github.com/keycloak/keycloak/blob/main/adapters/oidc/adapter-core/src/main/java/org/keycloak/adapters/AuthenticatedActionsHandler.java)<br/>
+Automated Scan Issues: No related automated scan issues encountered.<br/>
+Code Review Summary:<br/>
+	TODO
 
 ### OSS Contributions
 
