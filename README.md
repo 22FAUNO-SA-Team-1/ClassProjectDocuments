@@ -20,6 +20,8 @@ Part 3 - [Assurance Cases](./AssuranceCases.md)
 
 Part 4 - [Design For Sofware Security](./Design.md)
 
+Part 4 - [Design For Sofware Security](./CodeAnalysis.md)
+
 ### Misc
 
 [Meeting Notes](./MeetingNotes)
