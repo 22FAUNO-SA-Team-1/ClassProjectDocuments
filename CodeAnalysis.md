@@ -54,7 +54,7 @@ Files Analyzed:<br/>
     
 Automated Scan Issues: No related automated scan issues encountered.<br/>
 Code Review Summary:<br/>
-	TODO
+	This CWE calls out the risks involved with adding user input into a URL redirect without validating that input, potentially facilitating phishing attacks. In all six instances of CWE-601, the flagged line of code was either capturing session information, or location information from the user's cookies. At not point does the code reference direct user input into the construction of the URL redirect. Additionally, the Keycloak admin console includes the capability to set URL redirect rules within the application itself. 
 
 
 
