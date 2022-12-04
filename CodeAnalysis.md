@@ -1,6 +1,7 @@
 # Code Analysis Report
 Team OneWon
 ## Introduction
+In the process of evaluating and ensuring proper software assurance, we began with planning and analyzing hypothetical scenarios in which attackers might attempt to misuse the software and expanded those scenarios to determine what is required to ensure the software is secure and works as advertised.  With potential threats addressed and secure planning complete, we now must turn our attention to reviewing the source code to either determine whether the code offers proper assurance as is, or what must be changed in order to meet assurance demands.  We will accomplish this through a combination of automated code scanning tools, manual code review, and cross-referencing both methods with our previous findings of potential threats and weaknesses.
 
 ## Code Review 
 
