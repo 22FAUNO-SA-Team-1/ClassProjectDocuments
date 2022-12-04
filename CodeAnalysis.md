@@ -115,7 +115,7 @@ Code Review Summary:<br/>
 
 
 ## OSS Contributions
- 
+As laid out in the summary most CWE's flagged by automated scanning and reviewed by the team turned out to be false positives, however there were some notable exceptions that warrent additional investigation. After implementing automated scanning, Keycloak's vulnerability disclosure policy was re-reviewed. As part of the policy we had to notify the Keycloak Security group via email and made the alerts private, we did this by implementing a Beta feature "Private vulnerability reporting" in our fork (because we couldn't make the fork private). There was some non-CWE's that our scanning flagged primarily due to depreciated packages and libraries. We are still waiting on Keycloaks response about how to proceed. According to the disclosure policy, they will create a private fork to fix and add us if warrented (i.e. at their discretion).
 ## Reflection/Collaboration
 
 
