@@ -4,6 +4,14 @@ Team OneWon
 In the process of evaluating and ensuring proper software assurance, we began with planning and analyzing hypothetical scenarios in which attackers might attempt to misuse the software and expanded those scenarios to determine what is required to ensure the software is secure and works as advertised.  With potential threats addressed and secure planning complete, we now must turn our attention to reviewing the source code to either determine whether the code offers proper assurance as is, or what must be changed in order to meet assurance demands.  We will accomplish this through a combination of automated code scanning tools, manual code review, and cross-referencing both methods with our previous findings of potential threats and weaknesses.
 
 ## Code Review 
+Our code review strategy process will proceed as follows:
+1.)	 Begin by deciding which code scanning tools we should use (automated scanning strategy covered in the following subsection) and using those tools to scan the Keycloak source code
+2.)	Each member covering the CWEs will then use a combination of the following strategies
+a.	Refer to previous project findings in order to determine critical CWEs
+b.	Browse through Keycloak directories targeting folders dealing with critical interactions with potential threats or weaknesses
+c.	Browse through the list of CVE alerts found by automated scanning tools and cross-referencing them with appropriate CWEs
+3.)	Once we narrowed the list down to 5-10 CWEs with appropriate findings in the source code, any issues encountered are documented, and a summary of the code review findings is documented as well
+
 
 ### Automated Scan Strategy
 Our Automated scan strategy, was decided in part to what we learned in class and what Keycloak's main repository had pre-made. We made minor modifications to the CodeQL yaml file from class and ran it. While doing so, we noted that Keycloak had some other code scanning, that we utilized. This included a Trivy scanner, and their own CodeQL Java scanner. We tried to implement SonarCloud but received an [error](https://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException).
