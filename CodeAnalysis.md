@@ -6,6 +6,7 @@ Team OneWon
 
 ### Automated Scan Strategy
 Our Automated scan strategy, was decided in part to what we learned in class and what Keycloaks main repository had pre-made. We made minor modifications to the CodeQL yaml file from class and ran it. While doing so, we noted that Keycloak had some other code scanning, that we utilized. This included a Trivy scanner, and their own CodeQL Java scanner. We tried to implement SonarCloud but recieved an [error](https://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException).
+
 ## Selected CWEs
 
 ### [CWE-73](https://cwe.mitre.org/data/definitions/73.html): External Control of File Name or Path
@@ -73,11 +74,13 @@ Code Review Summary:<br/>
 	TODO
 
 ## OSS Contributions
-
+ 
 ## Reflection/Collaboration
 
 
 ## Misc
 [Back to Table of Contents](./README.md)
+
+[Code Scanning Alerts](https://github.com/22FAUNO-SA-Team-1/keycloak/security/code-scanning) (available to our organization and keycloak maintainers)
 
 [Project Board for this section](https://github.com/orgs/22FAUNO-SA-Team-1/projects/6)
