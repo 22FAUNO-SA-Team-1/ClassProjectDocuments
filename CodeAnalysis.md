@@ -54,7 +54,7 @@ Files Analyzed:<br/>
     
 Automated Scan Issues: No related automated scan issues encountered.<br/>
 Code Review Summary:<br/>
-	This CWE calls out the risks involved with adding user input into a URL redirect without validating that input, potentially facilitating phishing attacks. In all six instances of CWE-601, the flagged line of code was either capturing session information, or location information from the user's cookies. At not point does the code reference direct user input into the construction of the URL redirect. Additionally, the Keycloak admin console includes the capability to set URL redirect rules within the application itself. 
+	This CWE calls out the risks involved with adding user input into a URL redirect without validating that input, potentially facilitating phishing attacks. In all six instances of CWE-601, the flagged line of code was either capturing session information, or location information from the user's cookies. At no point does the code truly reference direct user input into the construction of the URL redirect. These six CVE's can be considered false alarms, and discarded. Additionally, should a Keycloak administrator ever need it, the Keycloak admin console includes the capability to set URL redirect rules within the application itself. 
 
 
 
@@ -70,8 +70,10 @@ Files Analyzed:<br/>
     [AuthenticatedActionsHandler.java](https://github.com/keycloak/keycloak/blob/main/adapters/oidc/adapter-core/src/main/java/org/keycloak/adapters/AuthenticatedActionsHandler.java)<br/>
 Automated Scan Issues: No related automated scan issues encountered.<br/>
 Code Review Summary:<br/>
-	TODO
-	
+	There were ten CVEs that referenced CWE-79. The concern being taking user input as an HTTP request parameter. Similar to CWE-601, six of these CVEs were specific to obtaining current user session information. Two others flagged lines of code establishing an HTTP connection, and the final two lines of code were reading the contents of an HTTP response. None of the code references direct user input being incorporated into HTTP requests. These ten CVE's can be considered false alarms, and discarded. One risk mitigation for cross-site scripting is that Keycloak uses a REST API with calls that require bearer token authentication.
+
+
+    
 ### [CWE-918](https://cwe.mitre.org/data/definitions/918.html): Server-side Request Forgery
 
 Files Analyzed:<br/>
