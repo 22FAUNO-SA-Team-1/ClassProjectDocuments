@@ -82,30 +82,36 @@ Files Analyzed:<br/>
     [QuarkusWelcomResource.java](https://github.com/keycloak/keycloak/blob/main/services/src/main/java/org/keycloak/quarkus/runtime/services/resources/QuarkusWelcomeResource.java)<br/>
     [ThemeResource.java](https://github.com/keycloak/keycloak/blob/main/services/src/main/java/org/keycloak/services/resources/ThemeResource.java)<br/>
     [WelcomeResource.java](https://github.com/keycloak/keycloak/blob/main/services/src/main/java/org/keycloak/services/resources/WelcomeResource.java)<br/>
-Automated Scan Issues: No related automated scan issues encountered.<br/>
+Automated Scan Issues: Scan told of a user-provided value being the cause of the vulnerability. No user-provided values were found within the code.<br/>
 Code Review Summary:<br/>
+	Server-side request forgery had eight hits in the code scanning report. The main reason why these hits were made was due to a "user-provided value". In a server-side request forgery attack, the server may be tricked into interacting with a malicious external server. Upon further review of the code, there were no instances of any user-provided values. The reason for looking into this CWE is due to the heavy use Keycloak utilizes servers and "realms". 
 
 ### [CWE-614](https://cwe.mitre.org/data/definitions/614.html): Failure to Use Secure Cookies
 
 Files Analyzed:<br/>
-    [FolderTheme.java](https://github.com/keycloak/keycloak/blob/main/services/src/main/java/org/keycloak/theme/FolderTheme.java)<br/>
+    [WrappedHttpServletResponse.java](https://github.com/keycloak/keycloak/blob/main/adapters/oidc/spring-security/src/main/java/org/keycloak/adapters/springsecurity/facade/WrappedHttpServletResponse.java)<br/>
 Automated Scan Issues: No related automated scan issues encountered.<br/>
 Code Review Summary:<br/>
+	This CWE was flagged five times throughout the code. The reason for this item being flagged is due to the 'secure' flag not being set on a cookie. This can be harmful as the cookie can be easily intercepted. Upon further review, the secure flag is set three lines above. The scanner did not pick up on this as the 'secure' parameter was not set on the actual method flagged, but rather in a separate method. The reason for looking into this CWE is due to how cookies are needed to verify users, and failure to have secure cookies could allow an attacker to pass as an administrator. 
 
 ### [CWE-327](https://cwe.mitre.org/data/definitions/327.html): Use of a Broken or Risky Cryptographic Algorithm
 
 Files Analyzed:<br/>
-    [FolderTheme.java](https://github.com/keycloak/keycloak/blob/main/services/src/main/java/org/keycloak/theme/FolderTheme.java)<br/>
+    [FIPS1402Provider.java](https://github.com/keycloak/keycloak/blob/main/crypto/fips1402/src/main/java/org/keycloak/crypto/fips/FIPS1402Provider.java)<br/>
 Automated Scan Issues: No related automated scan issues encountered.<br/>
 Code Review Summary:<br/>
+	This CWE appeared three times throughout the code. The code was flagged because "AES/CVC/PKCS7Padding" is a weak cryptographic algorithm. This raises concerns and should be looked at further in detail as Keycloak is a manager for applications and good cryptographic algorithms are needed. 
 
 ### [CWE-113](https://cwe.mitre.org/data/definitions/113.html): HTTP Response Splitting
 
 Files Analyzed:<br/>
-    [FolderTheme.java](https://github.com/keycloak/keycloak/blob/main/services/src/main/java/org/keycloak/theme/FolderTheme.java)<br/>
+    [CatalinaHttpFacade.java](https://github.com/keycloak/keycloak/blob/main/adapters/spi/tomcat-adapter-spi/src/main/java/org/keycloak/adapters/tomcat/CatalinaHttpFacade.java)<br/>
+    [JaxrsHttpFacade.java](https://github.com/keycloak/keycloak/blob/main/adapters/oidc/jaxrs-oauth-client/src/main/java/org/keycloak/jaxrs/JaxrsHttpFacade.java)<br/>
+    [WrappedHttpServletRequest.java](https://github.com/keycloak/keycloak/blob/main/adapters/oidc/spring-security/src/main/java/org/keycloak/adapters/springsecurity/facade/WrappedHttpServletRequest.java)<br/>
+    [ServletHttpFacade.java](https://github.com/keycloak/keycloak/blob/main/adapters/spi/servlet-adapter-spi/src/main/java/org/keycloak/adapters/servlet/ServletHttpFacade.java)<br/>
 Automated Scan Issues: No related automated scan issues encountered.<br/>
 Code Review Summary:<br/>
-
+	This CWE was flagged seven times. The reason why this weakness was flagged in the code was due to a "user-provided" value. The weakness involves writing a user input to a HTTP header, which can lead to HTTP response splitting. Upon further review of the code, no user-provided value was found; however, that does not mean that there is none. The code is shown to append a query string. Due to the complexity of the code and time restraints, no further evidence of an "user-provided" value was found. The reason why this CWE was looked into is due to the heavy usage Keycloak makes to API and HTTP requests. A vulnerability there would not be good. 
 
 
 ## OSS Contributions
