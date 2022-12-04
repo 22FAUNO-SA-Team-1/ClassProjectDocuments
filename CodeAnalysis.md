@@ -5,12 +5,19 @@ In the process of evaluating and ensuring proper software assurance, we began wi
 
 ## Code Review 
 Our code review strategy process will proceed as follows:
+
 1.)	 Begin by deciding which code scanning tools we should use (automated scanning strategy covered in the following subsection) and using those tools to scan the Keycloak source code
+
 2.)	Each member covering the CWEs will then use a combination of the following strategies
-a.	Refer to previous project findings in order to determine critical CWEs
-b.	Browse through Keycloak directories targeting folders dealing with critical interactions with potential threats or weaknesses
-c.	Browse through the list of CVE alerts found by automated scanning tools and cross-referencing them with appropriate CWEs
+
+2a.)	Refer to previous project findings in order to determine critical CWEs
+
+2b.)	Browse through Keycloak directories targeting folders dealing with critical interactions with potential threats or weaknesses
+
+2c.)	Browse through the list of CVE alerts found by automated scanning tools and cross-referencing them with appropriate CWEs
+
 3.)	Once we narrowed the list down to 5-10 CWEs with appropriate findings in the source code, any issues encountered are documented, and a summary of the code review findings is documented as well
+
 
 
 ### Automated Scan Strategy
