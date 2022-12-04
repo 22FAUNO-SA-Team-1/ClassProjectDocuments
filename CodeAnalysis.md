@@ -5,7 +5,7 @@ Team OneWon
 ## Code Review 
 
 ### Automated Scan Strategy
-Our Automated scan strategy, was decided in part to what we learned in class and what Keycloaks main repository had pre-made. We made minor modifications to the CodeQL yaml file from class and ran it. While doing so, we noted that Keycloak had some other code scanning, that we utilized. This included a Trivy scanner, and their own CodeQL Java scanner. We tried to implement SonarCloud but received an [error](https://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException).
+Our Automated scan strategy, was decided in part to what we learned in class and what Keycloak's main repository had pre-made. We made minor modifications to the CodeQL yaml file from class and ran it. While doing so, we noted that Keycloak had some other code scanning, that we utilized. This included a Trivy scanner, and their own CodeQL Java scanner. We tried to implement SonarCloud but received an [error](https://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException).
 
 ## Selected CWEs
 
@@ -125,8 +125,10 @@ Code Review Summary:<br/>
 
 Our findings from automated scanning and subsequent manual code review are that none of the CVEs we evaluated raised any major concerns.  Most of the CWEs encountered in this review have corresponding mitigations built into Keycloak that have been covered in other sections of our security analysis. We do, however, believe that some of the CWE's concerning HTTP and encryption may warrant additional investigation by someone with more than a superficial understanding of Keycloak's codebase.
 
+
+
 ## OSS Contributions
-As laid out in the summary most CWE's flagged by automated scanning and reviewed by the team turned out to be false positives, however there were some notable exceptions that warrant additional investigation. After implementing automated scanning, Keycloak's vulnerability disclosure policy was re-reviewed. As part of the policy we had to notify the Keycloak Security group via email and made the alerts private, we did this by implementing a Beta feature "Private vulnerability reporting" in our fork (because we couldn't make the fork private). There was some non-CWE's that our scanning flagged primarily due to depreciated packages and libraries. We are still waiting on Keycloaks response about how to proceed. According to the disclosure policy, they will create a private fork to fix and add us if warranted (i.e. at their discretion).
+As laid out in the summary most CWE's flagged by automated scanning and reviewed by the team turned out to be false positives, however there were some notable exceptions that warrant additional investigation. After implementing automated scanning, Keycloak's vulnerability disclosure policy was re-reviewed. As part of the policy we had to notify the Keycloak Security group via email and made the alerts private, we did this by implementing a Beta feature "Private vulnerability reporting" in our fork (because we couldn't make the fork private). There was some non-CWE's that our scanning flagged primarily due to depreciated packages and libraries. We are still waiting on Keycloak's response about how to proceed. According to the disclosure policy, they will create a private fork to fix and add us if warranted (i.e. at their discretion).
 
 
 
