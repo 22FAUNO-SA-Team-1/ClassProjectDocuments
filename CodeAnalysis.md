@@ -55,7 +55,7 @@ Files Analyzed:<br/>
     
 Automated Scan Issues: No related automated scan issues encountered.<br/>
 Code Review Summary:<br/>
-	TODO
+	This CWE calls out the risks involved with adding user input into a URL redirect without validating that input, potentially facilitating phishing attacks. In all six instances of CWE-601, the flagged line of code was either capturing session information, or location information from the user's cookies. At not point does the code reference direct user input into the construction of the URL redirect. Additionally, the Keycloak admin console includes the capability to set URL redirect rules within the application itself. 
 
 
 
@@ -72,6 +72,39 @@ Files Analyzed:<br/>
 Automated Scan Issues: No related automated scan issues encountered.<br/>
 Code Review Summary:<br/>
 	TODO
+	
+### [CWE-918](https://cwe.mitre.org/data/definitions/918.html): Server-side Request Forgery
+
+Files Analyzed:<br/>
+    [FolderTheme.java](https://github.com/keycloak/keycloak/blob/main/services/src/main/java/org/keycloak/theme/FolderTheme.java)<br/>
+    [QuarkusWelcomResource.java](https://github.com/keycloak/keycloak/blob/main/services/src/main/java/org/keycloak/quarkus/runtime/services/resources/QuarkusWelcomeResource.java)<br/>
+    [ThemeResource.java](https://github.com/keycloak/keycloak/blob/main/services/src/main/java/org/keycloak/services/resources/ThemeResource.java)<br/>
+    [WelcomeResource.java](https://github.com/keycloak/keycloak/blob/main/services/src/main/java/org/keycloak/services/resources/WelcomeResource.java)<br/>
+Automated Scan Issues: No related automated scan issues encountered.<br/>
+Code Review Summary:<br/>
+
+### [CWE-614](https://cwe.mitre.org/data/definitions/614.html): Failure to Use Secure Cookies
+
+Files Analyzed:<br/>
+    [FolderTheme.java](https://github.com/keycloak/keycloak/blob/main/services/src/main/java/org/keycloak/theme/FolderTheme.java)<br/>
+Automated Scan Issues: No related automated scan issues encountered.<br/>
+Code Review Summary:<br/>
+
+### [CWE-327](https://cwe.mitre.org/data/definitions/327.html): Use of a Broken or Risky Cryptographic Algorithm
+
+Files Analyzed:<br/>
+    [FolderTheme.java](https://github.com/keycloak/keycloak/blob/main/services/src/main/java/org/keycloak/theme/FolderTheme.java)<br/>
+Automated Scan Issues: No related automated scan issues encountered.<br/>
+Code Review Summary:<br/>
+
+### [CWE-113](https://cwe.mitre.org/data/definitions/113.html): HTTP Response Splitting
+
+Files Analyzed:<br/>
+    [FolderTheme.java](https://github.com/keycloak/keycloak/blob/main/services/src/main/java/org/keycloak/theme/FolderTheme.java)<br/>
+Automated Scan Issues: No related automated scan issues encountered.<br/>
+Code Review Summary:<br/>
+
+
 
 ## OSS Contributions
  
