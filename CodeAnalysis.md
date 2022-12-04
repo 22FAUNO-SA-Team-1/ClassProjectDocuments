@@ -5,7 +5,7 @@ Team OneWon
 ## Code Review 
 
 ### Automated Scan Strategy
-Our Automated scan strategy, was decided in part to what we learned in class and what Keycloaks main repository had pre-made. We made minor modifications to the CodeQL yaml file from class and ran it. While doing so, we noted that Keycloak had some other code scanning, that we utilized. This included a Trivy scanner, and their own CodeQL Java scanner. We tried to implement SonarCloud but recieved an [error](https://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException).
+Our Automated scan strategy, was decided in part to what we learned in class and what Keycloaks main repository had pre-made. We made minor modifications to the CodeQL yaml file from class and ran it. While doing so, we noted that Keycloak had some other code scanning, that we utilized. This included a Trivy scanner, and their own CodeQL Java scanner. We tried to implement SonarCloud but received an [error](https://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException).
 
 ## Selected CWEs
 
@@ -19,7 +19,7 @@ Files Analyzed:<br/>
     [BlacklistPasswordPolicyProvider.java](https://github.com/keycloak/keycloak/blob/main/server-spi-private/src/main/java/org/keycloak/policy/BlacklistPasswordPolicyProvider.java)<br/>
 Automated Scan Issues: No related automated scan issues encountered.<br/>
 Code Review Summary:<br/>
-    Each entry for this CWE relies on a PATH variable which can result in information leakage if not santized.  Characters such as ".." or directory separaters "/" should not be allowed for entry.  Keycloak's data validation and sanitation techniques must be relied upon again to protect against weaknesses like these.
+    Each entry for this CWE relies on a PATH variable which can result in information leakage if not sanitized.  Characters such as ".." or directory separators "/" should not be allowed for entry.  Keycloak's data validation and sanitation techniques must be relied upon again to protect against weaknesses like these.
 
 
 
@@ -136,6 +136,6 @@ As laid out in the summary most CWE's flagged by automated scanning and reviewed
 ## Misc
 [Back to Table of Contents](./README.md)
 
-[Code Scanning Alerts](https://github.com/22FAUNO-SA-Team-1/keycloak/security/code-scanning) (available to our organization and keycloak maintainers)
+[Code Scanning Alerts](https://github.com/22FAUNO-SA-Team-1/keycloak/security/code-scanning) (available to our organization and Keycloak maintainers)
 
 [Project Board for this section](https://github.com/orgs/22FAUNO-SA-Team-1/projects/6)
