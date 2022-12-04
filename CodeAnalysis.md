@@ -1,10 +1,14 @@
-### Introduction
+# Code Analysis Report
+Team OneWon
+## Introduction
 
-### Code Review 
+## Code Review 
 
-### Selected CWEs
+### Automated Scan Strategy
+Our Automated scan strategy, was decided in part to what we learned in class and what Keycloaks main repository had pre-made. We made minor modifications to the CodeQL yaml file from class and ran it. While doing so, we noted that Keycloak had some other code scanning, that we utilized. This included a Trivy scanner, and their own CodeQL Java scanner. We tried to implement SonarCloud but recieved an [error](https://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException).
+## Selected CWEs
 
-#### [CWE-73](https://cwe.mitre.org/data/definitions/73.html): External Control of File Name or Path
+### [CWE-73](https://cwe.mitre.org/data/definitions/73.html): External Control of File Name or Path
 
 Files Analyzed:<br/>
     [FolderTheme.java](https://github.com/keycloak/keycloak/blob/main/services/src/main/java/org/keycloak/theme/FolderTheme.java)<br/>
@@ -18,7 +22,7 @@ Code Review Summary:<br/>
 
 
 
-#### [CWE-90](https://cwe.mitre.org/data/definitions/90.html): Improper Neutralization of Special Elements used in an LDAP Query ('LDAP Injection')
+### [CWE-90](https://cwe.mitre.org/data/definitions/90.html): Improper Neutralization of Special Elements used in an LDAP Query ('LDAP Injection')
 
 Files Analyzed:<br/>
     [LdapMapEscapeStrategyTest.java](https://github.com/keycloak/keycloak/blob/main/model/map-ldap/src/test/java/org/keycloak/models/map/storage/ldap/store/LdapMapEscapeStrategyTest.java)<br/>
@@ -28,7 +32,7 @@ Code Review Summary:<br/>
 
 
 
-#### [CWE-807](https://cwe.mitre.org/data/definitions/807.html): Reliance on Untrusted Inputs in a Security Decision
+### [CWE-807](https://cwe.mitre.org/data/definitions/807.html): Reliance on Untrusted Inputs in a Security Decision
 
 Files Analyzed:<br/>
 	[DefaultClientSessionContext.java](https://github.com/keycloak/keycloak/blob/main/services/src/main/java/org/keycloak/services/util/DefaultClientSessionContext.java)<br/>
@@ -38,7 +42,7 @@ Code Review Summary:<br/>
 
 
     
-#### [CWE-601](https://cwe.mitre.org/data/definitions/601.html): URL Redirection to Untrusted Site ('Open Redirect')
+### [CWE-601](https://cwe.mitre.org/data/definitions/601.html): URL Redirection to Untrusted Site ('Open Redirect')
 
 Files Analyzed:<br/>
 	[WelcomeResource.java](https://github.com/keycloak/keycloak/blob/main/services/src/main/java/org/keycloak/services/resources/WelcomeResource.java)<br/>
@@ -54,7 +58,7 @@ Code Review Summary:<br/>
 
 
 
-#### [CWE-79](https://cwe.mitre.org/data/definitions/79.html): Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
+### [CWE-79](https://cwe.mitre.org/data/definitions/79.html): Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
 
 Files Analyzed:<br/>
 	[WelcomeResource.java](https://github.com/keycloak/keycloak/blob/main/services/src/main/java/org/keycloak/services/resources/WelcomeResource.java)<br/>
@@ -68,9 +72,9 @@ Automated Scan Issues: No related automated scan issues encountered.<br/>
 Code Review Summary:<br/>
 	TODO
 
-### OSS Contributions
+## OSS Contributions
 
-### Reflection/Collaboration
+## Reflection/Collaboration
 
 
 ## Misc
